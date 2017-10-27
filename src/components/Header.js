@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import { font } from '../utils';
 // import { Color } from '../utils';
 
 const Wrapper = styled.div`
@@ -9,12 +9,15 @@ const Wrapper = styled.div`
 	justify-content: center;
 	background-color: #606060
 
+
 `;
 
 const Navi = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	font-family: serif;
+
 
 
 `;
@@ -22,8 +25,9 @@ const Navi = styled.div`
 const Opening = styled.div`
 	font-size: 10pt;
 	color: white;
-	margin-top: 5rem;
-	justify-content: center;
+	margin-top: 10rem;
+
+
 `;
 
 const Links = styled.div`
@@ -31,12 +35,14 @@ const Links = styled.div`
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 `;
 
 const Linksname = styled.div`
 font-size: 10pt;
 color: white;
+margin-bottom: 2rem;
 
 `;
 
@@ -45,12 +51,14 @@ const Event = styled.div`
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 5rem;
 
 `;
 
 const Eventname = styled.div`
 font-size: 10pt;
 color: #ED024B;
+
 
 `;
 
@@ -61,13 +69,34 @@ color: white;
 `;
 
 
+const Welcome= styled.div`
+display: flex;
+flex-direction: column;
+
+`;
+
 const Titel = styled.div`
 	font-size: 24pt;
 	color: white;
 	justify-content: center;
+	width: 95%;
+	font-family: serif;
+	margin-top: 1rem;
 
 `;
 
+
+const Wallpaper = styled.div`
+background-image: url(${require('../assets/images/Wallpaperpic.png')});
+
+
+`;
+
+const Brand = styled.div`
+border-color: white;
+font-family: serif;
+margin-top: 10rem;
+`;
 
 class Header extends Component {
 	render() {
@@ -91,7 +120,14 @@ class Header extends Component {
 						</Eventdate>
 					</Event>
 				</Navi>
-				<Titel> DAMENBEKLEIDUNG/ TASCHEN/ ACCESSOIRES </Titel>
+				<Welcome>
+					<Titel> DAMENBEKLEIDUNG/ TASCHEN/ ACCESSOIRES </Titel>
+					<Wallpaper>
+						<Brand>
+							LAUFSTEG
+						</Brand>
+					</Wallpaper>
+				</Welcome>
 			</Wrapper>
 		);
 	}
