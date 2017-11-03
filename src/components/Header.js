@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: #606060
+	background-color: #606060;
 
 `;
 

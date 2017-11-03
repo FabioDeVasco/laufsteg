@@ -8,6 +8,7 @@ import './App.css';
 
 import Header from './components/Header';
 import NextEvent from './components/NextEvent';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <NextEvent />
+        <Contact />
       </div>
     );
   }
