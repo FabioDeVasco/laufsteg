@@ -3,13 +3,24 @@ import styled from 'styled-components';
 
 
 
-
-
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
+  `;
+
+const HeadContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  `;
+
+
+const HeadSpacer = styled.div`
+  display: flex;
+  flex: 1;
 
   `;
 
@@ -17,6 +28,7 @@ const TitelContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1.5;
 
   `;
 
@@ -36,7 +48,7 @@ const TitelContainer = styled.div`
   const TitelUnderline = styled.div`
     border-bottom: 3px solid;
     border-color: #ED024B;
-    margin-left: 40rem;
+    margin-left: 10rem;
     margin-top: -1.5rem;
 
     `;
@@ -73,7 +85,6 @@ const TitelContainer = styled.div`
   text-align: justify;
   margin-right: 2rem;
   margin-top: -8rem;
-
   line-height: 1.8rem;
   `;
 
@@ -83,12 +94,15 @@ const TitelContainer = styled.div`
     render() {
       return (
   	      <Wrapper>
-            <TitelContainer>
-              <Titel>
-                Fashion meets Party
-              </Titel>
-              <TitelUnderline>{' '}</TitelUnderline>
-            </TitelContainer>
+            <HeadContainer>
+              <HeadSpacer>{' '}</HeadSpacer>
+              <TitelContainer>
+                <Titel>
+                  Fashion meets Party
+                </Titel>
+                <TitelUnderline>{' '}</TitelUnderline>
+              </TitelContainer>
+            </HeadContainer>
             <EventBody>
               <EventPicture>
 
