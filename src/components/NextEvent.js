@@ -70,7 +70,7 @@ const TitelContainer = styled.div`
   background-repeat: no-repeat;
   padding-bottom: 20rem;
   padding-top: 20rem;
-  margin-left: -2rem;
+  margin-left: 1rem;
 
 
   `;

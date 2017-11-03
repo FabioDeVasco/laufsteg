@@ -44,7 +44,6 @@ const TitelContainer = styled.div`
     text-align: right;
     text-transform: uppercase;
 
-
   `;
 
   const TitelUnderline = styled.div`
@@ -56,7 +55,6 @@ const TitelContainer = styled.div`
     `;
 
 
-
   const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
@@ -65,6 +63,90 @@ const TitelContainer = styled.div`
   `;
 
 
+
+  const InstaPhoneContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  `;
+
+
+  const MailContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  `;
+
+
+  const FaceDirectionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  `;
+
+  const Insta = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  `;
+
+  const Phone = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  `;
+
+  const Mail = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  `;
+
+  const Face = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: Blue;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  `;
+
+
+  const Direction = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  `;
 
 
   class Contact extends Component {
@@ -81,7 +163,27 @@ const TitelContainer = styled.div`
               </TitelContainer>
             </HeadContainer>
             <ContactBody>
-              <div>Hier is Body</div>
+              <InstaPhoneContainer>
+                <Insta>
+                  <div>Hier is Instagram</div>
+                </Insta>
+                <Phone>
+                  <div>Hier is Phone</div>
+                </Phone>
+              </InstaPhoneContainer>
+              <MailContainer>
+                <Mail>
+                  <div>Hier is Mail</div>
+                </Mail>
+              </MailContainer>
+              <FaceDirectionContainer>
+                <Face>
+                  <div>Hier is Face</div>
+                </Face>
+                <Direction>
+                  <div>Hier is Direction</div>
+                </Direction>
+              </FaceDirectionContainer>
             </ContactBody>
           </Wrapper>
        );

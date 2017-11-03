@@ -9,6 +9,7 @@ import './App.css';
 import Header from './components/Header';
 import NextEvent from './components/NextEvent';
 import Contact from './components/Contact';
+import OverUs from './components/OverUs';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Header />
         <NextEvent />
         <Contact />
+        <OverUs />
       </div>
     );
   }
