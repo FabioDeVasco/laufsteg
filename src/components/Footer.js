@@ -92,8 +92,8 @@ const Wrapper = styled.div`
         background-color: red;
         padding-left: 10rem;
         padding-right: 10rem;
-        margin-left: -12rem;
-        margin-right: -12rem;
+        margin-left: -2rem;
+        margin-right: -2rem;
 
 
         `;
@@ -115,7 +115,7 @@ const Wrapper = styled.div`
                   Sitz
                 </ImpressumTitel>
                 <ImpressumText>
-                  <p>Sitz der Gesellschaft: Heilbronn</p>
+                  <div>Sitz der Gesellschaft: Heilbronn</div>
                  {' '}
                  <div>Geschäftsführende Gesellschafterin: Fatma Öztoprak</div>
                 </ImpressumText>
