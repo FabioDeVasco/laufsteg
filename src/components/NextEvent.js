@@ -39,7 +39,7 @@ const TitelContainer = styled.div`
     margin-bottom: 1.5rem;
     margin-right: 2rem;
     letter-spacing: 15px;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
 
 
@@ -80,7 +80,7 @@ const TitelContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   flex:1.5;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   font-size: 16pt;
   text-align: justify;
   margin-right: 2rem;

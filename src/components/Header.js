@@ -119,9 +119,13 @@ class Header extends Component {
 	          <Opening>
 	            <div>Öffnungszeiten</div>
 	            {' '}
-	            <div>Mo.-Sa.</div>
+	            <div>Mo.-Fr.</div>
 	            {' '}
 	            <div>10.00-18.00 Uhr</div>
+							{' '}
+	            <div>Sa.</div>
+	            {' '}
+	            <div>10.00-17.00 Uhr</div>
 	          </Opening>
 	          <Links>
 	            <Linksname>Kontakt</Linksname>

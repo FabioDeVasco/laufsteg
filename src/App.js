@@ -10,6 +10,8 @@ import Header from './components/Header';
 import NextEvent from './components/NextEvent';
 import Contact from './components/Contact';
 import OverUs from './components/OverUs';
+import Brands from './components/Brands';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -19,6 +21,8 @@ class App extends Component {
         <NextEvent />
         <Contact />
         <OverUs />
+        <Brands />
+        <Footer />
       </div>
     );
   }

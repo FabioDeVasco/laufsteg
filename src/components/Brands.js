@@ -7,6 +7,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+  background-color: #606060;
 
   `;
 
@@ -55,67 +56,58 @@ const TitelContainer = styled.div`
 
 
 
-  const OverBody = styled.div`
+  const BrandsBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  `;
-
-  const OverPicture = styled.div`
-  flex:1.5;
-  background-image: url(${require('../assets/images/Overpic.jpg')});
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 15rem;
-  padding-top: 15rem;
-  margin-right: 2rem;
   margin-top: 6rem;
-
-
   `;
 
-  const OverText = styled.div`
+  const BrandsLogo = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  flex:1;
-  letter-spacing: 3px;
-  font-size: 16pt;
-  text-align: justify;
-  margin-left: 2rem;
-  line-height: 1.8rem;
+  font-size: 20px;
+  color: black;
+  background-color: Grey;
+  padding-top: 2rem;
+  padding-left:2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
   `;
 
 
 
-  class OverUs extends Component {
+
+
+
+
+  class Brands extends Component {
     render() {
       return (
-  	      <Wrapper>
+          <Wrapper>
             <HeadContainer>
               <HeadSpacer>{' '}</HeadSpacer>
               <TitelContainer>
                 <Titel>
-                  Über uns
+                  Unsere Marken
                 </Titel>
                 <TitelUnderline>{' '}</TitelUnderline>
               </TitelContainer>
             </HeadContainer>
-            <OverBody>
-              <OverText>
-                <div>Wir sind eine private Boutique die Ihre Produkte sorgfälltig auswählt um stehts unseren Kundenwünschen gerecht zu werden.</div>
-                 {' '}
-                <div>Bei uns finden Sie das Besondere aus Damenbekleidung, Taschen und Accessoires. Wir freuen uns über Ihren besuch.</div>
-              </OverText>
-              <OverPicture>
-
-              </OverPicture>
-            </OverBody>
+            <BrandsBody>
+              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo> juvia</BrandsLogo>
+              <BrandsLogo> adidas</BrandsLogo>
+              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo> Nike</BrandsLogo>
+            </BrandsBody>
           </Wrapper>
        );
      }
    }
 
-   export default OverUs;
+   export default Brands;
