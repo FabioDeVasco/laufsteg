@@ -10,6 +10,7 @@ const Wrapper = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	background-color: #606060;
+	height: 600px;
 
 `;
 
@@ -26,7 +27,7 @@ const Navi = styled.div`
 const Opening = styled.div`
 	font-size: 10pt;
 	color: white;
-	margin-top: 1rem;
+	margin-top: 4rem;
 
 `;
 
@@ -36,7 +37,7 @@ const Links = styled.div`
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	margin-top: 7rem;
+	margin-top: 5rem;
 	margin-bottom: 7rem;
 
 `;
@@ -57,7 +58,7 @@ const Event = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 5rem;
-	
+
 `;
 
 const Eventname = styled.div`
@@ -74,7 +75,6 @@ const Welcome = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex:6;
-	justify-content: center;
 	width: 90%;
 	text-transform: uppercase;
 `;
@@ -87,12 +87,17 @@ const Titel = styled.div`
 	letter-spacing: 10px;
 `;
 
-const Wallpaper = styled.div`
-background-image: url(${require('../assets/images/Wallpaperpic.png')});
-background-position: 100%;
+const Wallpaper = styled.img`
+	width: 100%;
+`;
+
+const WallpaperContainer = styled.div`
+${''/* background-image: url(${require('../assets/images/Wallpaperpic.png')}); */}
+${''/* background-position: 100%;
 background-size: 100%, 100%;
 background-repeat: no-repeat;
-height: 90%;
+height: 90%; */}
+	position: relative;
 `;
 
 const Brand = styled.div`
@@ -144,11 +149,10 @@ class Header extends Component {
 	        </Navi>
 	        <Welcome>
 	          <Titel> Damenbekleidung/ Taschen/ Accessoires </Titel>
-	          <Wallpaper>
-	            <Brand>
-	              Laufsteg
-	            </Brand>
-	          </Wallpaper>
+	          <WallpaperContainer>
+
+							<Wallpaper src={require('../assets/images/Wallpaperpic.png')} alt="wallpaper" />
+	          </WallpaperContainer>
 	        </Welcome>
 	      </Wrapper>
     );

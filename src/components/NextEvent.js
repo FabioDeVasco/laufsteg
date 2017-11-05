@@ -7,13 +7,14 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
+	height: 700px;
   `;
 
 const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+	margin-top: 8rem;
 
   `;
 
@@ -59,6 +60,7 @@ const TitelContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+	margin-top: 3rem;
 
   `;
 
@@ -70,7 +72,7 @@ const TitelContainer = styled.div`
   background-repeat: no-repeat;
   padding-bottom: 20rem;
   padding-top: 20rem;
-  margin-left: 1rem;
+  margin-left: 3rem;
 
 
   `;
@@ -83,7 +85,8 @@ const TitelContainer = styled.div`
   letter-spacing: 3px;
   font-size: 16pt;
   text-align: justify;
-  margin-right: 2rem;
+  margin-right: 5rem;
+	margin-left: 5rem;
   margin-top: -8rem;
   line-height: 1.8rem;
   `;

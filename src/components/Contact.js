@@ -6,6 +6,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #606060;
+	height: 700px;
 
 
   `;
@@ -14,6 +15,7 @@ const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 12rem;
 
   `;
 
@@ -55,8 +57,8 @@ const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 6rem;
-
+  margin-top: 8rem;
+  background-color: black;
   `;
 
 const InstaPhoneContainer = styled.div`
@@ -211,9 +213,7 @@ class Contact extends Component {
         <ContactBody>
           <InstaPhoneContainer>
             <Insta>
-
                 <SoNetworkText>Instagram</SoNetworkText>
-
             </Insta>
             <Phone>
               <div>Telefon:</div>
