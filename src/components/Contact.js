@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
   background-color: #606060;
 	height: 700px;
 
@@ -56,29 +55,31 @@ const TitelUnderline = styled.div`
 const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin-top: 8rem;
-  background-color: black;
+
   `;
 
 const InstaPhoneContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 33%;
+
 
   `;
 
 const MailContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 33%;
+
 
   `;
 
 const FaceDirectionContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 33%;
+
 
   `;
 
@@ -90,7 +91,6 @@ const SoNetworkText = styled.div`
 
 const Insta = styled.div`
     display: flex;
-    justify-content: center;
     background-image: url(${require('../assets/images/Instagrampic.png')});
     background-position: top;
     background-size: 100%, 100%;
@@ -109,7 +109,6 @@ const Insta = styled.div`
 
   const Instafilter = styled.div`
       display: flex;
-      justify-content: center;
       background-color: white;
       opacity: 0.7;
       background-position: top;
@@ -124,7 +123,6 @@ const Insta = styled.div`
 const Phone = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     color: white;
     letter-spacing: 4px;
@@ -143,7 +141,6 @@ const Phone = styled.div`
 
 const Mail = styled.div`
     display: flex;
-    justify-content: center;
     background-image: url(${require('../assets/images/Mailpic.png')});
     background-position: top;
     background-size: 100%, 100%;
@@ -160,7 +157,6 @@ const Mail = styled.div`
 
 const Face = styled.div`
     display: flex;
-    justify-content: center;
     background-image: url(${require('../assets/images/Facebookpic.png')});
     background-position: top;
     background-size: 100%, 100%;
@@ -172,7 +168,7 @@ const Face = styled.div`
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
-    margin-top: -1rem;
+
 
   `;
 

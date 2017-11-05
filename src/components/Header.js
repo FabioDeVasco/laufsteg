@@ -92,29 +92,22 @@ const Wallpaper = styled.img`
 `;
 
 const WallpaperContainer = styled.div`
-${''/* background-image: url(${require('../assets/images/Wallpaperpic.png')}); */}
-${''/* background-position: 100%;
-background-size: 100%, 100%;
-background-repeat: no-repeat;
-height: 90%; */}
 	position: relative;
 `;
 
 const Brand = styled.div`
-border-color: white;
-border: 4px solid ;
-border-radius: 10px;
-font-size: 48pt;
-letter-spacing: 4px;
-color: white;
-margin-top: 2rem;
-margin-bottom: 30rem;
-margin-left: 20rem;
-margin-right: 20rem;
-padding-left: 1rem;
-padding-right: 1rem;
-padding-top: 1rem;
-padding-bottom: 1rem;
+	border-color: white;
+	border: 4px solid ;
+	border-radius: 10px;
+	font-size: 48pt;
+	letter-spacing: 4px;
+	color: white;
+	padding: 1rem;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+
 `;
 
 class Header extends Component {
@@ -150,8 +143,8 @@ class Header extends Component {
 	        <Welcome>
 	          <Titel> Damenbekleidung/ Taschen/ Accessoires </Titel>
 	          <WallpaperContainer>
-
 							<Wallpaper src={require('../assets/images/Wallpaperpic.png')} alt="wallpaper" />
+							<Brand>Laufsteg</Brand>
 	          </WallpaperContainer>
 	        </Welcome>
 	      </Wrapper>
