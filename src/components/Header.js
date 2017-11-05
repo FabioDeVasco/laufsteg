@@ -57,6 +57,7 @@ const Event = styled.div`
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 5rem;
+	
 `;
 
 const Eventname = styled.div`

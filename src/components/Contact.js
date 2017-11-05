@@ -38,7 +38,7 @@ const Titel = styled.div`
     margin-bottom: 1.5rem;
     margin-right: 2rem;
     letter-spacing: 15px;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
 
   `;
@@ -80,6 +80,12 @@ const FaceDirectionContainer = styled.div`
 
   `;
 
+const SoNetworkText = styled.div`
+      font-size: 40px;
+      color: black;
+      `;
+
+
 const Insta = styled.div`
     display: flex;
     justify-content: center;
@@ -87,15 +93,31 @@ const Insta = styled.div`
     background-position: top;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
+    z-index: 1;
 
   `;
+
+
+  const Instafilter = styled.div`
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      opacity: 0.7;
+      background-position: top;
+      padding-top: 10rem;
+      padding-bottom: 8.75rem;
+      padding-left:
+      margin-top: -9rem;
+      z-index: 2;
+`;
+
 
 const Phone = styled.div`
     display: flex;
@@ -133,6 +155,7 @@ const Mail = styled.div`
     margin-right: 2rem;
   `;
 
+
 const Face = styled.div`
     display: flex;
     justify-content: center;
@@ -150,6 +173,8 @@ const Face = styled.div`
     margin-top: -1rem;
 
   `;
+
+
 
 const Direction = styled.div`
     display: flex;
@@ -186,7 +211,9 @@ class Contact extends Component {
         <ContactBody>
           <InstaPhoneContainer>
             <Insta>
-              <div>Instagram</div>
+
+                <SoNetworkText>Instagram</SoNetworkText>
+
             </Insta>
             <Phone>
               <div>Telefon:</div>
@@ -196,12 +223,12 @@ class Contact extends Component {
           </InstaPhoneContainer>
           <MailContainer>
             <Mail>
-              <div>E-Mail</div>
+              <SoNetworkText>E-Mail</SoNetworkText>
             </Mail>
           </MailContainer>
           <FaceDirectionContainer>
             <Face>
-              <div>facebook</div>
+              <SoNetworkText>facebook</SoNetworkText>
             </Face>
             <Direction>
               <div>Biedermanngasse 4 </div>
