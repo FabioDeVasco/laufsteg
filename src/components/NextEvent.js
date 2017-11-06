@@ -85,9 +85,9 @@ const TitelContainer = styled.div`
   letter-spacing: 3px;
   font-size: 16pt;
   text-align: justify;
-  margin-right: 5rem;
-	margin-left: 5rem;
-  margin-top: -8rem;
+  margin-right: 6rem;
+	margin-left: 6rem;
+  margin-top: -6rem;
   line-height: 1.8rem;
   `;
 

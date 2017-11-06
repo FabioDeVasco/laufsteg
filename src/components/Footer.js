@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #DDDDDD;
+  margin-top: 20rem;
   `;
 
 

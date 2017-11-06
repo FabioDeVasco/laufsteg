@@ -5,7 +5,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
   background-color: #606060;
-	height: 700px;
+	height: 600px;
 
 
   `;
@@ -55,7 +55,9 @@ const TitelUnderline = styled.div`
 const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 8rem;
+  margin-top: 9rem;
+
+
 
   `;
 
@@ -73,6 +75,7 @@ const MailContainer = styled.div`
     width: 33%;
 
 
+
   `;
 
 const FaceDirectionContainer = styled.div`
@@ -84,25 +87,30 @@ const FaceDirectionContainer = styled.div`
   `;
 
 const SoNetworkText = styled.div`
-      font-size: 40px;
-      color: black;
-      `;
+    font-size: 40px;
+    color: black;
+    background-color: Black;
+    justify-content: flex-end;
 
+  `;
 
 const Insta = styled.div`
     display: flex;
+    justify-content: center;
     background-image: url(${require('../assets/images/Instagrampic.png')});
     background-position: top;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
-    z-index: 1;
+
+
+
 
   `;
 
@@ -123,20 +131,14 @@ const Insta = styled.div`
 const Phone = styled.div`
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
     color: white;
-    letter-spacing: 4px;
-    font-size: 20pt;
-    line-height: 1.8rem;
+    letter-spacing: 2px;
+    font-size: 18pt;
     background-color: grey;
-    padding-top: 3rem;
-    padding-left: 3rem;
-    padding-bottom: 2rem;
-    padding-right: 3rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
+    padding: 4.2rem;
+    margin: 2rem ;
+
   `;
 
 const Mail = styled.div`
@@ -146,7 +148,7 @@ const Mail = styled.div`
     background-size: 100%, 100%;
     background-repeat: no-repeat;
     padding-top: 15.5rem;
-    padding-bottom: 15.5rem;
+    padding-bottom: 15.8rem;
     padding-left: 10rem;
     padding-right: 10rem;
     margin-left: 2rem;
@@ -161,8 +163,8 @@ const Face = styled.div`
     background-position: top;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
     padding-left: 10rem;
     padding-right: 10rem;
     margin-left: 2rem;
@@ -179,13 +181,12 @@ const Direction = styled.div`
     flex-direction: column;
     justify-content: center;
     color: white;
-    letter-spacing: 8px;
-    font-size: 20pt;
-    line-height: 1.8rem;
+    letter-spacing: 2px;
+    font-size: 18pt;
     background-color: grey;
-    padding-top: 4rem;
+    padding-top: 7.2rem;
     padding-left: 3rem;
-    padding-bottom: 4rem;
+    padding-bottom: 7.2rem;
     padding-right: 3rem;
     margin-left: 2rem;
     margin-top: -2rem;

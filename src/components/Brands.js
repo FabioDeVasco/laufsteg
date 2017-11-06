@@ -8,6 +8,8 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #606060;
+  height: 600px;
+
 
   `;
 
@@ -15,7 +17,7 @@ const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  margin-top: 19rem;
   `;
 
 
@@ -60,7 +62,8 @@ const TitelContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 10rem;
+
   `;
 
   const BrandsLogo = styled.div`
@@ -69,12 +72,8 @@ const TitelContainer = styled.div`
   font-size: 20px;
   color: black;
   background-color: Grey;
-  padding-top: 2rem;
-  padding-left:2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding: 4rem;
+  margin: 1rem;
 
   `;
 
@@ -97,6 +96,14 @@ const TitelContainer = styled.div`
                 <TitelUnderline>{' '}</TitelUnderline>
               </TitelContainer>
             </HeadContainer>
+            <BrandsBody>
+              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo> juvia</BrandsLogo>
+              <BrandsLogo> adidas</BrandsLogo>
+              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo> Nike</BrandsLogo>
+            </BrandsBody>
             <BrandsBody>
               <BrandsLogo> Nike</BrandsLogo>
               <BrandsLogo> juvia</BrandsLogo>

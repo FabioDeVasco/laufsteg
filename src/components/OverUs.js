@@ -7,6 +7,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+  height: 800px;
 
   `;
 
@@ -14,6 +15,7 @@ const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 19rem;
 
   `;
 
@@ -59,6 +61,7 @@ const TitelContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 2rem;
 
   `;
 
@@ -86,6 +89,7 @@ const TitelContainer = styled.div`
   text-align: justify;
   margin-left: 2rem;
   line-height: 1.8rem;
+  margin-top: 2rem;
   `;
 
 
