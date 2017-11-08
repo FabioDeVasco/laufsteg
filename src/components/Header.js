@@ -141,7 +141,7 @@ class Header extends Component {
 	          </Event>
 	        </Navi>
 	        <Welcome>
-	          <Titel> Damenbekleidung/ Taschen/ Accessoires </Titel>
+	          <Titel id="header"> Damenbekleidung/ Taschen/ Accessoires </Titel>
 	          <WallpaperContainer>
 							<Wallpaper src={require('../assets/images/Wallpaperpic.png')} alt="wallpaper" />
 							<Brand>Laufsteg</Brand>

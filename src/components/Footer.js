@@ -107,8 +107,8 @@ const Wrapper = styled.div`
         flex-direction: row;
         justify-content: center;
         color: black;
-        margin-left: 0.3rem;
-        margin-right: 0.3rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
         `;
 
       const ImpressumIconArrow = styled.div`

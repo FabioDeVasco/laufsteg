@@ -57,8 +57,6 @@ const ContactBody = styled.div`
   flex-direction: row;
   margin-top: 9rem;
 
-
-
   `;
 
 const InstaPhoneContainer = styled.div`

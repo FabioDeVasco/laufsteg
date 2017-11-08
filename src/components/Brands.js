@@ -73,7 +73,10 @@ const TitelContainer = styled.div`
   color: black;
   background-color: Grey;
   padding: 4rem;
-  margin: 1rem;
+  margin-left: : 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 
   `;
 
@@ -97,7 +100,7 @@ const TitelContainer = styled.div`
               </TitelContainer>
             </HeadContainer>
             <BrandsBody>
-              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/81hourslogo.png')}> Nike</BrandsLogo>
               <BrandsLogo> juvia</BrandsLogo>
               <BrandsLogo> adidas</BrandsLogo>
               <BrandsLogo> Nike</BrandsLogo>

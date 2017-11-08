@@ -66,7 +66,7 @@ const TitelContainer = styled.div`
 
   const EventPicture = styled.div`
   flex:1;
-  background-image: url(${require('../assets/images/Eventpic.jpg')});
+  background-image: url(${require('../assets/images/Eventpic.png')});
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ const TitelContainer = styled.div`
               <EventText>
                 <div>Zwei mal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips um euch die neue Kollektionen vorzustellen.</div>
                  {' '}
-                <div>Wir möchten euch ganz herzlich einladen um an unserem Event teilzunehmen. Wir freuen uns auf euer Erscheinen und einen tollen Abend mit ganz viel Spaß</div>
+                <div>Wir möchten euch ganz herzlich einladen um an unserem nächsten Event teilzunehmen. Wir freuen uns auf euer Erscheinen und auf einen tollen Abend mit ganz viel Spaß.</div>
               </EventText>
             </EventBody>
           </Wrapper>
