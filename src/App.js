@@ -9,7 +9,7 @@ import './App.css';
 import Header from './components/Header';
 import NextEvent from './components/NextEvent';
 import Contact from './components/Contact';
-import OverUs from './components/OverUs';
+import AboutUs from './components/AboutUs';
 import Brands from './components/Brands';
 import Footer from './components/Footer';
 
@@ -20,7 +20,7 @@ class App extends Component {
         <Header />
         <NextEvent />
         <Contact />
-        <OverUs />
+        <AboutUs />
         <Brands />
         <Footer />
       </div>

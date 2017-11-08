@@ -57,7 +57,7 @@ const TitelContainer = styled.div`
 
 
 
-  const OverBody = styled.div`
+  const AboutBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -65,9 +65,9 @@ const TitelContainer = styled.div`
 
   `;
 
-  const OverPicture = styled.div`
+  const AboutPicture = styled.div`
   flex:1.5;
-  background-image: url(${require('../assets/images/Overpic.jpg')});
+  background-image: url(${require('../assets/images/Aboutpic.jpg')});
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@ const TitelContainer = styled.div`
 
   `;
 
-  const OverText = styled.div`
+  const AboutText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +94,7 @@ const TitelContainer = styled.div`
 
 
 
-  class OverUs extends Component {
+  class AboutUs extends Component {
     render() {
       return (
   	      <Wrapper>
@@ -107,19 +107,19 @@ const TitelContainer = styled.div`
                 <TitelUnderline>{' '}</TitelUnderline>
               </TitelContainer>
             </HeadContainer>
-            <OverBody>
-              <OverText>
+            <AboutBody>
+              <AboutText>
                 <div>Wir sind eine private Boutique die Ihre Produkte sorgfälltig auswählt um stehts unseren Kundenwünschen gerecht zu werden.</div>
                  {' '}
                 <div>Bei uns finden Sie das Besondere aus Damenbekleidung, Taschen und Accessoires. Wir freuen uns über Ihren besuch.</div>
-              </OverText>
-              <OverPicture>
+              </AboutText>
+              <AboutPicture>
 
-              </OverPicture>
-            </OverBody>
+              </AboutPicture>
+            </AboutBody>
           </Wrapper>
        );
      }
    }
 
-   export default OverUs;
+   export default AboutUs;
