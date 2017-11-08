@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #606060;
-  height: 600px;
+  height: 750px;
 
 
   `;
@@ -17,7 +17,7 @@ const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 19rem;
+  margin-top: 30rem;
   `;
 
 
@@ -66,17 +66,12 @@ const TitelContainer = styled.div`
 
   `;
 
-  const BrandsLogo = styled.div`
+  const BrandsLogo = styled.img`
   display: flex;
-  justify-content: center;
-  font-size: 20px;
-  color: black;
-  background-color: Grey;
-  padding: 4rem;
-  margin-left: : 2rem;
-  margin-right: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  position: relative;
+  height: 85px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 
   `;
 
@@ -100,20 +95,28 @@ const TitelContainer = styled.div`
               </TitelContainer>
             </HeadContainer>
             <BrandsBody>
-              <BrandsLogo src={require('../assets/images/brands/81hourslogo.png')}> Nike</BrandsLogo>
-              <BrandsLogo> juvia</BrandsLogo>
-              <BrandsLogo> adidas</BrandsLogo>
-              <BrandsLogo> Nike</BrandsLogo>
-              <BrandsLogo> Nike</BrandsLogo>
-              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/rosemundelogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/codello.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/voluspalogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/mazelogo.png')} alt="BrandsLogo"></BrandsLogo>
             </BrandsBody>
             <BrandsBody>
-              <BrandsLogo> Nike</BrandsLogo>
-              <BrandsLogo> juvia</BrandsLogo>
-              <BrandsLogo> adidas</BrandsLogo>
-              <BrandsLogo> Nike</BrandsLogo>
-              <BrandsLogo> Nike</BrandsLogo>
-              <BrandsLogo> Nike</BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/bbeltlogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/custommadelogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/rockrevivallogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/gestuzlogo.png')} alt="BrandsLogo"></BrandsLogo>
+            </BrandsBody>
+            <BrandsBody>
+                <BrandsLogo src={require('../assets/images/brands/bomboogielogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/rabenslogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/DELICATELOVElogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/81hourslogo.png')} alt="BrandsLogo"></BrandsLogo>
+            </BrandsBody>
+            <BrandsBody>
+              <BrandsLogo src={require('../assets/images/brands/campomaggilogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/juvialogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/lovestorieslogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/ragandbonelogo.png')} alt="BrandsLogo"></BrandsLogo>
             </BrandsBody>
           </Wrapper>
        );
