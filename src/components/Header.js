@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
-// import { Color } from '../utils';
+//import fonts from '../utils';
 
 
 
@@ -25,7 +24,7 @@ const Navi = styled.div`
 `;
 
 const Opening = styled.div`
-	font-size: 10pt;
+	font-size: 9pt;
 	color: white;
 	margin-top: 4rem;
 
@@ -43,7 +42,7 @@ const Links = styled.div`
 `;
 
 const Linksname = styled.div`
-	font-size: 10pt;
+	font-size: 9pt;
 	color: white;
 	margin-bottom: 1rem;
 	margin-top: 1em;
@@ -62,12 +61,12 @@ const Event = styled.div`
 `;
 
 const Eventname = styled.div`
-	font-size: 10pt;
+	font-size: 9pt;
 	color: #ED024B;
 `;
 
 const Eventdate = styled.div`
-	font-size: 10pt;
+	font-size: 9pt;
 	color: white;
 `;
 
@@ -99,15 +98,29 @@ const Brand = styled.div`
 	border-color: white;
 	border: 4px solid ;
 	border-radius: 10px;
-	font-size: 48pt;
+	font-size: 46pt;
 	letter-spacing: 4px;
 	color: white;
-	padding: 1rem;
+	padding: 1rem 2rem 1rem 2rem;
 	position: absolute;
 	top: 8%;
 	left: 50%;
 	transform: translateX(-50%);
 
+`;
+
+
+const Welcometitel = styled.div`
+	font-size: 48pt;
+	letter-spacing: 2px;
+	color: white;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-transform: none;
+	${''/* font-family: ${Font.SECONDARY}; */}
+	font-style: italic;
 `;
 
 class Header extends Component {
@@ -145,6 +158,7 @@ class Header extends Component {
 	          <WallpaperContainer>
 							<Wallpaper src={require('../assets/images/Wallpaperpic.png')} alt="wallpaper" />
 							<Brand>Laufsteg</Brand>
+							<Welcometitel>Willkommen</Welcometitel>
 	          </WallpaperContainer>
 	        </Welcome>
 	      </Wrapper>

@@ -71,10 +71,11 @@ const TitelContainer = styled.div`
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-bottom: 15rem;
-  padding-top: 15rem;
+  padding-bottom: 16rem;
+  padding-top: 16rem;
   margin-right: 2rem;
   margin-top: 6rem;
+  
 
 
   `;
@@ -85,7 +86,7 @@ const TitelContainer = styled.div`
   justify-content: center;
   flex:1;
   letter-spacing: 3px;
-  font-size: 16pt;
+  font-size: 14pt;
   text-align: justify;
   margin-left: 2rem;
   line-height: 1.8rem;

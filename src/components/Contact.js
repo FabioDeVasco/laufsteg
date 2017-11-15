@@ -52,6 +52,12 @@ const TitelUnderline = styled.div`
 
     `;
 
+
+
+
+
+
+
 const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
@@ -59,35 +65,27 @@ const ContactBody = styled.div`
 
   `;
 
-const InstaPhoneContainer = styled.div`
+const LinkInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 33%;
 
 
   `;
+  const Filter = styled.div`
+      display: flex;
+      background-color: white;
+      opacity: 0.7;
+      padding: 50%;
+      border: 2px solid;
+      border-color: red;
+      position: relative;
 
-const MailContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-
-
-
-  `;
-
-const FaceDirectionContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-
-
-  `;
+`;
 
 const SoNetworkText = styled.div`
-    font-size: 40px;
+    font-size: 20px;
     color: black;
-    background-color: Black;
     justify-content: flex-end;
 
   `;
@@ -99,31 +97,15 @@ const Insta = styled.div`
     background-position: top;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-left: 2rem;
+    padding: 6rem;
+    margin-left: 3rem;
     margin-bottom: 1rem;
-    margin-right: 2rem;
-
-
-
+    margin-right: 3rem;
+    border: solid 3px;
+    border-color: grey;
 
   `;
 
-
-  const Instafilter = styled.div`
-      display: flex;
-      background-color: white;
-      opacity: 0.7;
-      background-position: top;
-      padding-top: 10rem;
-      padding-bottom: 8.75rem;
-      padding-left:
-      margin-top: -9rem;
-      z-index: 2;
-`;
 
 
 const Phone = styled.div`
@@ -206,22 +188,24 @@ class Contact extends Component {
           </TitelContainer>
         </HeadContainer>
         <ContactBody>
-          <InstaPhoneContainer>
+          <LinkInfoContainer>
             <Insta>
+                <Filter>
                 <SoNetworkText>Instagram</SoNetworkText>
+                </Filter>
             </Insta>
             <Phone>
               <div>Telefon:</div>
               {' '}
               <div>07131  20 31 881</div>
             </Phone>
-          </InstaPhoneContainer>
-          <MailContainer>
+          </LinkInfoContainer>
+          <LinkInfoContainer>
             <Mail>
               <SoNetworkText>E-Mail</SoNetworkText>
             </Mail>
-          </MailContainer>
-          <FaceDirectionContainer>
+          </LinkInfoContainer>
+          <LinkInfoContainer>
             <Face>
               <SoNetworkText>facebook</SoNetworkText>
             </Face>
@@ -230,7 +214,7 @@ class Contact extends Component {
               {' '}
               <div>74072 Heilbronn</div>
             </Direction>
-          </FaceDirectionContainer>
+          </LinkInfoContainer>
         </ContactBody>
       </Wrapper>
     );
