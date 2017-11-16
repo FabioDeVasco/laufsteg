@@ -72,7 +72,7 @@ const TitelContainer = styled.div`
   background-repeat: no-repeat;
   padding-bottom: 18rem;
   padding-top: 18rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
 	margin-top: 2rem;
 	border: 3px solid;
 	border-color: white;
@@ -84,11 +84,11 @@ const TitelContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex:1.5;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 14pt;
   text-align: justify;
   margin-right: 6rem;
-	margin-left: 6rem;
+	margin-left: 8rem;
   margin-top: 2rem;
   line-height: 1.8rem;
   `;

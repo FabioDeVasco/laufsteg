@@ -62,6 +62,8 @@ const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 9rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 
   `;
 
@@ -95,12 +97,11 @@ const Insta = styled.div`
     justify-content: center;
     background-image: url(${require('../assets/images/Instagrampic.png')});
     background-position: top;
-    background-size: 100%, 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding: 6rem;
-    margin-left: 3rem;
-    margin-bottom: 1rem;
-    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+    margin-right: 8rem;
     border: solid 3px;
     border-color: grey;
 
@@ -108,17 +109,18 @@ const Insta = styled.div`
 
 
 
-const Phone = styled.div`
+const Info = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    letter-spacing: 2px;
-    font-size: 18pt;
+    font-size: 12pt;
     background-color: grey;
-    padding: 4.2rem;
-    margin: 2rem ;
-
+    padding: 3rem;
+    margin-right: 8rem;
+    text-align: center;
+    border: solid 3px;
+    border-color: grey;
   `;
 
 const Mail = styled.div`
@@ -141,38 +143,35 @@ const Face = styled.div`
     display: flex;
     background-image: url(${require('../assets/images/Facebookpic.png')});
     background-position: top;
-    background-size: 100%, 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
-
+    padding: 4rem;
+    margin-bottom: 1.5rem;
+    margin-right: 8rem;
+    border: solid 3px;
+    border-color: grey;
 
   `;
 
 
 
-const Direction = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 18pt;
-    background-color: grey;
-    padding-top: 7.2rem;
-    padding-left: 3rem;
-    padding-bottom: 7.2rem;
-    padding-right: 3rem;
-    margin-left: 2rem;
-    margin-top: -2rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
-  `;
+// const Direction = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     color: white;
+//     letter-spacing: 2px;
+//     font-size: 18pt;
+//     background-color: grey;
+//     padding-top: 7.2rem;
+//     padding-left: 3rem;
+//     padding-bottom: 7.2rem;
+//     padding-right: 3rem;
+//     margin-left: 2rem;
+//     margin-top: -2rem;
+//     margin-bottom: 1rem;
+//     margin-right: 2rem;
+//   `;
 
 class Contact extends Component {
   render() {
@@ -190,15 +189,20 @@ class Contact extends Component {
         <ContactBody>
           <LinkInfoContainer>
             <Insta>
-                <Filter>
                 <SoNetworkText>Instagram</SoNetworkText>
-                </Filter>
             </Insta>
-            <Phone>
+            <Face>
+              <SoNetworkText>facebook</SoNetworkText>
+            </Face>
+            <Info>
               <div>Telefon:</div>
               {' '}
               <div>07131  20 31 881</div>
-            </Phone>
+              <br></br>
+              <div>Biedermanngasse 4 </div>
+              {' '}
+              <div>74072 Heilbronn</div>
+            </Info>
           </LinkInfoContainer>
           <LinkInfoContainer>
             <Mail>
@@ -206,14 +210,7 @@ class Contact extends Component {
             </Mail>
           </LinkInfoContainer>
           <LinkInfoContainer>
-            <Face>
-              <SoNetworkText>facebook</SoNetworkText>
-            </Face>
-            <Direction>
-              <div>Biedermanngasse 4 </div>
-              {' '}
-              <div>74072 Heilbronn</div>
-            </Direction>
+            <Mail />
           </LinkInfoContainer>
         </ContactBody>
       </Wrapper>
