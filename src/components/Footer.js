@@ -18,7 +18,6 @@ const Wrapper = styled.div`
   	flex-direction: row;
   	justify-content: center;
 
-
     `;
 
     const IntroSpacer = styled.div`
@@ -30,7 +29,6 @@ const Wrapper = styled.div`
       margin-right:1rem;
       padding-top: 2rem;
       width: 28rem;
-
 
       `;
 
@@ -44,6 +42,21 @@ const Wrapper = styled.div`
       color: black;
       text-transform: uppercase;
       margin-bottom: 1rem;
+
+      `;
+
+
+      const Brand = styled.div`
+      	border-color: black;
+      	border: 1px solid ;
+      	border-radius: 6px;
+      	font-size: 20pt;
+      	letter-spacing: 1px;
+      	color: black;
+      	padding: 0.5rem 2rem 0.5rem 2rem;
+      	position: relative;
+      	margin-top: 2rem;
+        margin-bottom: 2rem;
 
       `;
 
@@ -109,6 +122,7 @@ const Wrapper = styled.div`
         color: black;
         margin-left: 0.8rem;
         margin-right: 0.8rem;
+
         `;
 
       const ImpressumIconArrow = styled.div`
@@ -119,14 +133,33 @@ const Wrapper = styled.div`
         margin-top: 2rem;
 
         `;
-        const ImpressumDesignBox = styled.div`
-          display: flex;
-          flex-direction: column;
-          justify-content:flex-end;
-          font-style: italic;
-          color: black;
-          text-align: right;
-          `;
+
+      const ImpressumLinkDesignBox = styled.div`
+        display: flex;
+        flex-direction: row;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        margin-bottom: 2rem
+
+        `;
+
+      const ImpressumLinkBox = styled.div`
+        display: flex;
+        color:  #ED024B;
+        width: 50%;
+
+        `;
+
+      const ImpressumDesignBox = styled.div`
+        display: flex;
+        justify-content: flex-end;
+        font-style: italic;
+        color: black;
+        width: 50%;
+
+
+
+        `;
 
 
   class Footer extends Component {
@@ -134,9 +167,7 @@ const Wrapper = styled.div`
       return (
   	      <Wrapper>
             <Intro>
-              <IntroSpacer>{' '}</IntroSpacer>
-              <IntroTitel>Impressum Laufsteg</IntroTitel>
-              <IntroSpacer>{' '}</IntroSpacer>
+              <Brand>Laufsteg</Brand>
             </Intro>
             <ImpressumBox>
               <ImpressumPart>
@@ -195,9 +226,14 @@ const Wrapper = styled.div`
                 </ImpressumIconArrow>
               </ImpressumIconPart>
             </ImpressumIconBox>
-            <ImpressumDesignBox>
-              Design @ Zackteck
-            </ImpressumDesignBox>
+            <ImpressumLinkDesignBox>
+              <ImpressumLinkBox>
+                Impressum
+              </ImpressumLinkBox>
+              <ImpressumDesignBox>
+                Design @ Zackteck
+              </ImpressumDesignBox>
+            </ImpressumLinkDesignBox>
           </Wrapper>
       );
     }

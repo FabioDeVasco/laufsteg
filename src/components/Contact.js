@@ -54,10 +54,6 @@ const TitelUnderline = styled.div`
 
 
 
-
-
-
-
 const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
@@ -70,11 +66,10 @@ const ContactBody = styled.div`
 const LinkInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 33%;
-
 
   `;
-  const Filter = styled.div`
+
+const Filter = styled.div`
       display: flex;
       background-color: white;
       opacity: 0.7;
@@ -88,7 +83,9 @@ const LinkInfoContainer = styled.div`
 const SoNetworkText = styled.div`
     font-size: 20px;
     color: black;
-    justify-content: flex-end;
+    position: relative;
+  	left: 50%;
+    top: 50%;
 
   `;
 
@@ -124,18 +121,16 @@ const Info = styled.div`
   `;
 
 const Mail = styled.div`
-    display: flex;
-    background-image: url(${require('../assets/images/Mailpic.png')});
-    background-position: top;
-    background-size: 100%, 100%;
+    background-image: url(${require('../assets/images/Mailbigpic.png')});
+    background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 15.5rem;
-    padding-bottom: 15.8rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    margin-left: 2rem;
+    padding: 13.5rem 20rem 13.5rem 20rem;
     margin-bottom: 1rem;
-    margin-right: 2rem;
+    border: 3px solid;
+    border-color: grey;
+    opacity: 0.9;
+    ${''/* filter: blur(1.5px); */}
+
   `;
 
 
@@ -206,11 +201,8 @@ class Contact extends Component {
           </LinkInfoContainer>
           <LinkInfoContainer>
             <Mail>
-              <SoNetworkText>E-Mail</SoNetworkText>
+            <SoNetworkText>E-Mail</SoNetworkText>
             </Mail>
-          </LinkInfoContainer>
-          <LinkInfoContainer>
-            <Mail />
           </LinkInfoContainer>
         </ContactBody>
       </Wrapper>

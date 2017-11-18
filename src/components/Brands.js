@@ -17,7 +17,7 @@ const HeadContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 30rem;
+  margin-top: 23rem;
   `;
 
 
@@ -56,28 +56,30 @@ const TitelContainer = styled.div`
 
     `;
 
+  const BrandsConatiner = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+
+    `;
 
 
   const BrandsBody = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 10rem;
+  justify-content: space-around;
+  margin: 5rem 6rem 2rem 6rem;
+
 
   `;
 
   const BrandsLogo = styled.img`
   display: flex;
-  position: relative;
-  height: 85px;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  position:  static;
+  height: 70px;
 
   `;
-
-
-
-
 
 
 
@@ -94,6 +96,7 @@ const TitelContainer = styled.div`
                 <TitelUnderline>{' '}</TitelUnderline>
               </TitelContainer>
             </HeadContainer>
+            <BrandsConatiner>
             <BrandsBody>
               <BrandsLogo src={require('../assets/images/brands/rosemundelogo.png')} alt="BrandsLogo"></BrandsLogo>
               <BrandsLogo src={require('../assets/images/brands/codello.png')} alt="BrandsLogo"></BrandsLogo>
@@ -107,7 +110,7 @@ const TitelContainer = styled.div`
               <BrandsLogo src={require('../assets/images/brands/gestuzlogo.png')} alt="BrandsLogo"></BrandsLogo>
             </BrandsBody>
             <BrandsBody>
-                <BrandsLogo src={require('../assets/images/brands/bomboogielogo.png')} alt="BrandsLogo"></BrandsLogo>
+              <BrandsLogo src={require('../assets/images/brands/bomboogielogo.png')} alt="BrandsLogo"></BrandsLogo>
               <BrandsLogo src={require('../assets/images/brands/rabenslogo.png')} alt="BrandsLogo"></BrandsLogo>
               <BrandsLogo src={require('../assets/images/brands/DELICATELOVElogo.png')} alt="BrandsLogo"></BrandsLogo>
               <BrandsLogo src={require('../assets/images/brands/81hourslogo.png')} alt="BrandsLogo"></BrandsLogo>
@@ -118,6 +121,7 @@ const TitelContainer = styled.div`
               <BrandsLogo src={require('../assets/images/brands/lovestorieslogo.png')} alt="BrandsLogo"></BrandsLogo>
               <BrandsLogo src={require('../assets/images/brands/ragandbonelogo.png')} alt="BrandsLogo"></BrandsLogo>
             </BrandsBody>
+            </BrandsConatiner>
           </Wrapper>
        );
      }

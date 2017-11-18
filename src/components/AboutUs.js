@@ -69,28 +69,27 @@ const TitelContainer = styled.div`
   flex:1.5;
   background-image: url(${require('../assets/images/Aboutpic.jpg')});
   background-position: right;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 16rem;
-  padding-top: 16rem;
-  margin-right: 2rem;
-  margin-top: 6rem;
-  
-
+  padding-top: 18rem;
+  margin-right: 6rem;
+  margin-top: 2rem;
 
   `;
+
 
   const AboutText = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex:1;
-  letter-spacing: 3px;
+  flex:1.5;
+  letter-spacing: 2px;
   font-size: 14pt;
   text-align: justify;
-  margin-left: 2rem;
-  line-height: 1.8rem;
+  margin-right: 6rem;
+	margin-left: 6rem;
   margin-top: 2rem;
+  line-height: 1.8rem;
+
   `;
 
 
@@ -112,11 +111,10 @@ const TitelContainer = styled.div`
               <AboutText>
                 <div>Wir sind eine private Boutique die Ihre Produkte sorgfälltig auswählt um stehts unseren Kundenwünschen gerecht zu werden.</div>
                  {' '}
+                <br></br>
                 <div>Bei uns finden Sie das Besondere aus Damenbekleidung, Taschen und Accessoires. Wir freuen uns über Ihren besuch.</div>
               </AboutText>
-              <AboutPicture>
-
-              </AboutPicture>
+              <AboutPicture/>
             </AboutBody>
           </Wrapper>
        );
