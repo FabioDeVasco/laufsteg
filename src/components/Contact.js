@@ -122,6 +122,7 @@ const Info = styled.div`
 
 const Mail = styled.div`
     background-image: url(${require('../assets/images/Mailbigpic.png')});
+		background-color: white !important;
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 13.5rem 20rem 13.5rem 20rem;

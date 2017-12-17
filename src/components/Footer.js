@@ -51,12 +51,13 @@ const Wrapper = styled.div`
       	border: 1px solid ;
       	border-radius: 6px;
       	font-size: 20pt;
-      	letter-spacing: 1px;
+      	letter-spacing: 3px;
       	color: black;
       	padding: 0.5rem 2rem 0.5rem 2rem;
       	position: relative;
       	margin-top: 2rem;
         margin-bottom: 2rem;
+				text-transform: uppercase;
 
       `;
 

@@ -34,7 +34,7 @@ const TitelContainer = styled.div`
   `;
 
   const Titel = styled.div`
-  	font-size: 30pt;
+  	font-size: 26pt;
   	color: black;
   	margin-top: 5rem;
     margin-bottom: 1.5rem;
