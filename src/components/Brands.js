@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import SectionTitle from './common/SectionTitle';
 
 
 const Wrapper = styled.div`
@@ -9,59 +9,14 @@ const Wrapper = styled.div`
 	justify-content: center;
   background-color: #606060;
   height: 750px;
-
-
+	padding-top: 23rem;
   `;
-
-const HeadContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 23rem;
-  `;
-
-
-const HeadSpacer = styled.div`
-  display: flex;
-  flex: 1;
-
-  `;
-
-const TitelContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1.5;
-
-  `;
-
-  const Titel = styled.div`
-  	font-size: 30pt;
-  	color: black;
-  	margin-top: 5rem;
-    margin-bottom: 1.5rem;
-    margin-right: 2rem;
-    letter-spacing: 15px;
-    text-align: center;
-    text-transform: uppercase;
-
-
-  `;
-
-  const TitelUnderline = styled.div`
-    border-bottom: 3px solid;
-    border-color: #ED024B;
-    margin-left: 10rem;
-    margin-top: -1.5rem;
-
-    `;
 
   const BrandsConatiner = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 3.5rem;
   margin-bottom: 4rem;
-
     `;
 
 
@@ -70,15 +25,12 @@ const TitelContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin: 5rem 6rem 2rem 6rem;
-
-
   `;
 
   const BrandsLogo = styled.img`
   display: flex;
   position:  static;
   height: 70px;
-
   `;
 
 
@@ -87,15 +39,7 @@ const TitelContainer = styled.div`
     render() {
       return (
           <Wrapper>
-            <HeadContainer>
-              <HeadSpacer>{' '}</HeadSpacer>
-              <TitelContainer>
-                <Titel>
-                  Unsere Marken
-                </Titel>
-                <TitelUnderline>{' '}</TitelUnderline>
-              </TitelContainer>
-            </HeadContainer>
+            <SectionTitle title="Unsere Marken"/>
             <BrandsConatiner>
             <BrandsBody>
               <BrandsLogo src={require('../assets/images/brands/rosemundelogo.png')} alt="BrandsLogo"></BrandsLogo>

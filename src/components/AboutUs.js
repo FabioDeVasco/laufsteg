@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import SectionTitle from './common/SectionTitle';
 
 
 const Wrapper = styled.div`
@@ -8,61 +8,14 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   height: 800px;
-
+	padding-top: 19rem;
   `;
-
-const HeadContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 19rem;
-
-  `;
-
-
-const HeadSpacer = styled.div`
-  display: flex;
-  flex: 1;
-
-  `;
-
-const TitelContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1.5;
-
-  `;
-
-  const Titel = styled.div`
-  	font-size: 30pt;
-  	color: black;
-  	margin-top: 5rem;
-    margin-bottom: 1.5rem;
-    margin-right: 2rem;
-    letter-spacing: 15px;
-    text-align: center;
-    text-transform: uppercase;
-
-
-  `;
-
-  const TitelUnderline = styled.div`
-    border-bottom: 3px solid;
-    border-color: #ED024B;
-    margin-left: 10rem;
-    margin-top: -1.5rem;
-
-    `;
-
-
 
   const AboutBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 2rem;
-
   `;
 
   const AboutPicture = styled.div`
@@ -74,7 +27,6 @@ const TitelContainer = styled.div`
   padding-top: 18rem;
   margin-right: 6rem;
   margin-top: 2rem;
-
   `;
 
 
@@ -89,7 +41,6 @@ const TitelContainer = styled.div`
 	margin-left: 6rem;
   margin-top: 2rem;
   line-height: 1.8rem;
-
   `;
 
 
@@ -98,15 +49,7 @@ const TitelContainer = styled.div`
     render() {
       return (
   	      <Wrapper>
-            <HeadContainer>
-              <HeadSpacer>{' '}</HeadSpacer>
-              <TitelContainer>
-                <Titel>
-                  Über uns
-                </Titel>
-                <TitelUnderline>{' '}</TitelUnderline>
-              </TitelContainer>
-            </HeadContainer>
+            <SectionTitle title="Über uns"/>
             <AboutBody>
               <AboutText>
                 <div>Wir sind eine private Boutique die Ihre Produkte sorgfälltig auswählt um stehts unseren Kundenwünschen gerecht zu werden.</div>

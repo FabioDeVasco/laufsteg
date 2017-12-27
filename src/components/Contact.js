@@ -1,58 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import SectionTitle from './common/SectionTitle';
 
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
   background-color: #606060;
 	height: 600px;
-
-
+	padding-top: 12rem;
   `;
-
-const HeadContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 12rem;
-
-  `;
-
-const HeadSpacer = styled.div`
-  display: flex;
-  flex: 1;
-
-  `;
-
-const TitelContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1.5;
-
-  `;
-
-const Titel = styled.div`
-  	font-size: 30pt;
-  	color: black;
-  	margin-top: 5rem;
-    margin-bottom: 1.5rem;
-    margin-right: 2rem;
-    letter-spacing: 15px;
-    text-align: center;
-    text-transform: uppercase;
-
-  `;
-
-const TitelUnderline = styled.div`
-    border-bottom: 3px solid;
-    border-color: #ED024B;
-    margin-left: 10rem;
-    margin-top: -1.5rem;
-
-    `;
-
-
 
 const ContactBody = styled.div`
   display: flex;
@@ -60,13 +16,11 @@ const ContactBody = styled.div`
   margin-top: 9rem;
   margin-left: 6rem;
   margin-right: 6rem;
-
   `;
 
 const LinkInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
-
   `;
 
 const Filter = styled.div`
@@ -77,7 +31,6 @@ const Filter = styled.div`
       border: 2px solid;
       border-color: red;
       position: relative;
-
 `;
 
 const SoNetworkText = styled.div`
@@ -86,7 +39,6 @@ const SoNetworkText = styled.div`
     position: relative;
   	left: 50%;
     top: 50%;
-
   `;
 
 const Insta = styled.div`
@@ -101,7 +53,6 @@ const Insta = styled.div`
     margin-right: 8rem;
     border: solid 3px;
     border-color: grey;
-
   `;
 
 
@@ -146,42 +97,14 @@ const Face = styled.div`
     margin-right: 8rem;
     border: solid 3px;
     border-color: grey;
-
   `;
 
-
-
-// const Direction = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     color: white;
-//     letter-spacing: 2px;
-//     font-size: 18pt;
-//     background-color: grey;
-//     padding-top: 7.2rem;
-//     padding-left: 3rem;
-//     padding-bottom: 7.2rem;
-//     padding-right: 3rem;
-//     margin-left: 2rem;
-//     margin-top: -2rem;
-//     margin-bottom: 1rem;
-//     margin-right: 2rem;
-//   `;
 
 class Contact extends Component {
   render() {
     return (
       <Wrapper>
-        <HeadContainer>
-          <HeadSpacer>{' '}</HeadSpacer>
-          <TitelContainer>
-            <Titel>
-              Kontakt
-            </Titel>
-            <TitelUnderline>{' '}</TitelUnderline>
-          </TitelContainer>
-        </HeadContainer>
+        <SectionTitle title="Kontakt"/>
         <ContactBody>
           <LinkInfoContainer>
             <Insta>

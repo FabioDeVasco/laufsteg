@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import SectionTitle from './common/SectionTitle';
 
 
 const Wrapper = styled.div`
@@ -8,60 +8,14 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	height: 700px;
-  `;
-
-const HeadContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-	margin-top: 8rem;
-
-  `;
-
-
-const HeadSpacer = styled.div`
-  display: flex;
-  flex: 1;
-
-  `;
-
-const TitelContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1.5;
-
-  `;
-
-  const Titel = styled.div`
-  	font-size: 26pt;
-  	color: black;
-  	margin-top: 5rem;
-    margin-bottom: 1.5rem;
-    margin-right: 2rem;
-    letter-spacing: 15px;
-    text-align: center;
-    text-transform: uppercase;
-
-
-  `;
-
-  const TitelUnderline = styled.div`
-    border-bottom: 3px solid;
-    border-color: #ED024B;
-    margin-left: 10rem;
-    margin-top: -1.5rem;
-
-    `;
-
-
+	padding-top: 8rem;
+`;
 
   const EventBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
 	margin-top: 3rem;
-
   `;
 
   const EventPicture = styled.div`
@@ -76,8 +30,6 @@ const TitelContainer = styled.div`
 	margin-top: 2rem;
 	border: 3px solid;
 	border-color: white;
-
-
   `;
 
   const EventText = styled.div`
@@ -115,19 +67,9 @@ const TitelContainer = styled.div`
     render() {
       return (
   	      <Wrapper>
-            <HeadContainer>
-              <HeadSpacer>{' '}</HeadSpacer>
-              <TitelContainer>
-                <Titel>
-                  Fashion meets Party
-                </Titel>
-                <TitelUnderline>{' '}</TitelUnderline>
-              </TitelContainer>
-            </HeadContainer>
+            <SectionTitle title="Fashion meets Party"/>
             <EventBody>
-              <EventPicture>
-
-              </EventPicture>
+              <EventPicture/>
               <EventText>
                 <div>Zwei mal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips um euch die neue Kollektionen vorzustellen.</div>
                  {' '}
