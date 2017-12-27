@@ -216,7 +216,7 @@ const Wrapper = styled.div`
               </IconContainer>
               <IconContainer>
                 <ImpressumIconArrow>
-                  <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+                  <i className="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
                 </ImpressumIconArrow>
               </IconContainer>
             </ImpressumIconBox>

@@ -7,7 +7,8 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   height: 650px;
-	padding-top: 6rem;
+	padding-top: 8rem;
+	margin-top: -5rem;
 `;
 
 const AboutBody = styled.div`
