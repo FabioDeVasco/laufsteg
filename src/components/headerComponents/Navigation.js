@@ -18,6 +18,7 @@ const Navi = styled.div`
 const Opening = styled.div`
 	font-size: 8pt;
 	color: white;
+	margin-top: 1.5rem;
 `;
 
 const Links = styled.div`

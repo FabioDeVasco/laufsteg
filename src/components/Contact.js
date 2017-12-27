@@ -6,8 +6,8 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
   background-color: #606060;
-	height: 600px;
-	padding-top: 12rem;
+	height: 680px;
+	padding-top: 4rem;
   `;
 
 const ContactBody = styled.div`
@@ -33,12 +33,10 @@ const Filter = styled.div`
       position: relative;
 `;
 
-const SoNetworkText = styled.div`
+const ContactForm = styled.div`
     font-size: 20px;
     color: black;
     position: relative;
-  	left: 50%;
-    top: 50%;
   `;
 
 const Insta = styled.div`
@@ -54,8 +52,6 @@ const Insta = styled.div`
     border: solid 3px;
     border-color: grey;
   `;
-
-
 
 const Info = styled.div`
     display: flex;
@@ -74,17 +70,15 @@ const Info = styled.div`
 const Mail = styled.div`
     background-image: url(${require('../assets/images/Mailbigpic.png')});
 		background-color: white !important;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    padding: 13.5rem 20rem 13.5rem 20rem;
-    margin-bottom: 1rem;
+    padding: 4rem;
     border: 3px solid;
     border-color: grey;
     opacity: 0.9;
-    ${''/* filter: blur(1.5px); */}
+    ${/* filter: blur(1.5px); */ ''}
 
   `;
-
 
 const Face = styled.div`
     display: flex;
@@ -99,25 +93,24 @@ const Face = styled.div`
     border-color: grey;
   `;
 
-
 class Contact extends Component {
   render() {
     return (
       <Wrapper>
-        <SectionTitle title="Kontakt"/>
+        <SectionTitle title="Kontakt" />
         <ContactBody>
           <LinkInfoContainer>
             <Insta>
-                <SoNetworkText>Instagram</SoNetworkText>
+              <div>Instagram</div>
             </Insta>
             <Face>
-              <SoNetworkText>facebook</SoNetworkText>
+              <div>facebook</div>
             </Face>
             <Info>
               <div>Telefon:</div>
               {' '}
               <div>07131  20 31 881</div>
-              <br></br>
+              <br />
               <div>Biedermanngasse 4 </div>
               {' '}
               <div>74072 Heilbronn</div>
@@ -125,7 +118,44 @@ class Contact extends Component {
           </LinkInfoContainer>
           <LinkInfoContainer>
             <Mail>
-            <SoNetworkText>E-Mail</SoNetworkText>
+              <ContactForm>
+                <div className="field">
+                  <label className="label">Name</label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder="Text input"
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+                  <label className="label">Email</label>
+                  <div className="control has-icons-left has-icons-right">
+                    <input
+                      className="input"
+                      type="email"
+                      placeholder="Email input"
+                      value="hello@"
+                    />
+                    <span className="icon is-small is-left">
+                      <i className="fa fa-envelope" />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="field">
+                  <label className="label">Message</label>
+                  <div className="control">
+                    <textarea className="textarea" placeholder="Textarea" />
+                  </div>
+                </div>
+
+                <div className="control">
+                  <button className="button is-link">Submit</button>
+                </div>
+              </ContactForm>
             </Mail>
           </LinkInfoContainer>
         </ContactBody>

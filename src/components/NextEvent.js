@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 700px;
+	height: 800px;
 	padding-top: 8rem;
 `;
 
@@ -49,8 +49,8 @@ const IconContainer = styled.div`
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin: 2rem;
-		`;
+		margin-top: 2rem;
+	`;
 
 
 class NextEvent extends Component {

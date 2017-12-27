@@ -5,6 +5,7 @@ import { Font, FONT_URL } from './utils';
 
 import logo from './logo.svg';
 import './App.css';
+import 'bulma/css/bulma.css';
 
 import Header from './components/Header';
 import NextEvent from './components/NextEvent';

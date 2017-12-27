@@ -8,8 +8,8 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #606060;
-  height: 750px;
-	padding-top: 23rem;
+  height: 550px;
+	padding-top: 8rem;
   `;
 
   const BrandsConatiner = styled.div`
