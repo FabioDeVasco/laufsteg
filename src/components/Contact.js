@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
 import SectionTitle from './common/SectionTitle';
-import BackgroundImage from './common/BackgroundImage'
-import Icon from './common/Icon'
+import BackgroundImage from './common/BackgroundImage';
+import Icon from './common/Icon';
+import Location from './Location';
 
 const Wrapper = styled.div`
 	display: flex;
@@ -127,6 +129,7 @@ margin-bottom: 1rem;
 
 const Info = styled.div`
   display: flex;
+	position: relative;
   flex-direction: column;
   justify-content: center;
   color: white;
@@ -137,6 +140,21 @@ const Info = styled.div`
   border-color: withe;
 	margin-right: 1rem;
 	flex-basis: 50%;
+`;
+
+const Address = styled.div`
+	background-color: gray;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.2;
+	font-size: .9rem;
+	letter-spacing: 1px;
+	font-weight: bold;
 `;
 
 const Form = styled.form`
@@ -159,33 +177,32 @@ class Contact extends Component {
       <Wrapper>
         <SectionTitle title="Kontakt" />
         <ContactBody>
-					<ContactDetails>
-          <ContactTile>
-            <Insta>
-              <Icon className="fa fa-instagram fa-3x" color="#F5F5F5" />
-            </Insta>
-						<Face>
-              <Icon className="fa fa-facebook-square fa-3x" color="#F5F5F5" />
-            </Face>
-          </ContactTile>
-					<ContactTile>
-						<Info>
-              <Icon className="fa fa-phone fa-3x" color="white" />
-              {' '}
-              <div>+49 7131  20 31 881</div>
-							{' '}
-							<div>Innerhalb der Öffnungszeiten</div>
-            </Info>
-						<Info>
-              <Icon className="fa fa-map-marker fa-3x" color="white" />
-              {' '}
-              <div>Biedermanngasse 4 </div>
-              {' '}
-              <div>74072 Heilbronn</div>
-							{' '}
-            </Info>
-					</ContactTile>
-					</ContactDetails>
+          <ContactDetails>
+            <ContactTile>
+              <Insta>
+                <Icon className="fa fa-instagram fa-3x" color="#F5F5F5" />
+              </Insta>
+              <Face>
+                <Icon className="fa fa-facebook-square fa-3x" color="#F5F5F5" />
+              </Face>
+            </ContactTile>
+            <ContactTile>
+              <Info>
+                <Icon className="fa fa-phone fa-3x" color="white" />
+                {' '}
+                <div>+49 7131  20 31 881</div>
+                {' '}
+                <div>Innerhalb der Öffnungszeiten</div>
+              </Info>
+              <Info>
+                <Location />
+								<Address>
+									Biedermanngasse 4<br />
+									74072 Heilbronn
+								</Address>
+              </Info>
+            </ContactTile>
+          </ContactDetails>
           <ContactForm>
             <div className="field">
               <Label>Ihr Name</Label>
@@ -205,7 +222,6 @@ class Contact extends Component {
                   className="input"
                   type="email"
                   placeholder="Geben Sie Ihre Emailadresse ein"
-
                 />
                 <span className="icon is-small is-left">
                   <i className="fa fa-envelope" />
@@ -214,13 +230,16 @@ class Contact extends Component {
             </div>
 
             <div className="field">
-							<Label>Ihre Nachricht</Label>
+              <Label>Ihre Nachricht</Label>
               <div className="control">
-                <textarea className="textarea" placeholder="Womit können wir Ihnen helfen?" />
+                <textarea
+                  className="textarea"
+                  placeholder="Womit können wir Ihnen helfen?"
+                />
               </div>
             </div>
 
-            <div style={{ alignSelf: "center" }} className="control">
+            <div style={{ alignSelf: 'center' }} className="control">
               <button className="button is-link">Absenden</button>
             </div>
           </ContactForm>
