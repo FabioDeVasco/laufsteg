@@ -212,7 +212,7 @@ const Wrapper = styled.div`
 								<Icon className="fa fa-facebook-square fa-1x" />
 								<Icon className="fa fa-instagram fa-1x" />
 								<Icon className="fa fa-envelope-o fa-1x" />
-								<Icon className="fa fa-phone fa-1x"  />
+								<Icon className="fa fa-phone fa-1x" />
               </IconContainer>
               <IconContainer>
                 <ImpressumIconArrow>
