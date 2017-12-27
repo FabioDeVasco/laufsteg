@@ -127,11 +127,10 @@ margin-bottom: 1rem;
 
 `;
 
-const Info = styled.div`
+const InfoAdress = styled.div`
   display: flex;
 	position: relative;
   flex-direction: column;
-  justify-content: center;
   color: white;
   font-size: 12pt;
   background-color: grey;
@@ -140,6 +139,29 @@ const Info = styled.div`
   border-color: withe;
 	margin-right: 1rem;
 	flex-basis: 50%;
+	line-height: 1.2;
+	font-size: .9rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+
+`;
+const Info = styled.div`
+  display: flex;
+	position: relative;
+  flex-direction: column;
+  color: white;
+  font-size: 12pt;
+  background-color: grey;
+  text-align: center;
+	justify-content: center;
+  border: solid 3px;
+  border-color: withe;
+	margin-right: 1rem;
+	flex-basis: 50%;
+	font-size: .9rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+
 `;
 
 const Address = styled.div`
@@ -194,13 +216,13 @@ class Contact extends Component {
                 {' '}
                 <div>Innerhalb der Öffnungszeiten</div>
               </Info>
-              <Info>
+              <InfoAdress>
                 <Location />
 								<Address>
 									Biedermanngasse 4<br />
 									74072 Heilbronn
 								</Address>
-              </Info>
+              </InfoAdress>
             </ContactTile>
           </ContactDetails>
           <ContactForm>

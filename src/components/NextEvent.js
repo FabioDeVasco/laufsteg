@@ -22,10 +22,10 @@ const EventPicture = styled.div`
   flex:1;
   background-image: url(${require('../assets/images/Eventpic.png')});
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 18rem;
-  padding-top: 18rem;
+  padding-bottom: 17rem;
+  padding-top: 17rem;
   margin-left: 6rem;
 	margin-top: 2rem;
 	border: 3px solid;

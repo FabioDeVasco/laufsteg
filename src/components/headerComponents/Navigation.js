@@ -46,6 +46,7 @@ const Event = styled.div`
 const EventName = styled.div`
 	font-size: 9pt;
 	color: #ED024B;
+	font-weight: bold;
 `;
 
 const EventDate = styled.div`
