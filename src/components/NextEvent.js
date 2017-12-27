@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import SectionTitle from './common/SectionTitle';
-
+import Icon from './common/Icon'
 
 const Wrapper = styled.div`
 	display: flex;
@@ -11,14 +11,14 @@ const Wrapper = styled.div`
 	padding-top: 8rem;
 `;
 
-  const EventBody = styled.div`
+const EventBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
 	margin-top: 3rem;
   `;
 
-  const EventPicture = styled.div`
+const EventPicture = styled.div`
   flex:1;
   background-image: url(${require('../assets/images/Eventpic.png')});
   background-position: center;
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
 	border-color: white;
   `;
 
-  const EventText = styled.div`
+const EventText = styled.div`
   display: flex;
   flex-direction: column;
   flex:1.5;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   line-height: 1.8rem;
   `;
 
-	const ImpressumIconPart = styled.div`
+const IconContainer = styled.div`
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -53,44 +53,36 @@ const Wrapper = styled.div`
 		`;
 
 
-	const ImpressumIcon = styled.div`
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		color: #606060;
-		margin-left: 0.8rem;
-		margin-right: 0.8rem;
-		`;
+class NextEvent extends Component {
+  render() {
+    return (
+      <Wrapper>
+        <SectionTitle title="Fashion meets Party" />
+        <EventBody>
+          <EventPicture />
+          <EventText>
+            <div>
+              Zwei mal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips um euch die neue Kollektionen vorzustellen.
+            </div>
+            {' '}
+            <br />
+            <div>
+              Wir möchten euch ganz herzlich einladen um an unserem nächsten Event teilzunehmen. Wir freuen uns auf euer Erscheinen und auf einen tollen Abend mit ganz viel Spaß.
+            </div>
+            {' '}
+            <br />
+            <div>
+              Auf unseren sozialen Netzwerken könnt ihr Fotos von unseren Events und vieles mehr finden. Schaut einfach vorbei!
+            </div>
+            <IconContainer>
+              <Icon className="fa fa-facebook-square fa-2x" color="#606060" />
+              <Icon className="fa fa-instagram fa-2x" color="#606060" />
+            </IconContainer>
+          </EventText>
+        </EventBody>
+      </Wrapper>
+    );
+  }
+}
 
-
-  class NextEvent extends Component {
-    render() {
-      return (
-  	      <Wrapper>
-            <SectionTitle title="Fashion meets Party"/>
-            <EventBody>
-              <EventPicture/>
-              <EventText>
-                <div>Zwei mal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips um euch die neue Kollektionen vorzustellen.</div>
-                 {' '}
-								<br></br>
-                <div>Wir möchten euch ganz herzlich einladen um an unserem nächsten Event teilzunehmen. Wir freuen uns auf euer Erscheinen und auf einen tollen Abend mit ganz viel Spaß.</div>
-								{' '}
-							 <br></br>
-							 <div>Auf unseren sozialen Netzwerken könnt ihr Fotos von unseren Events und vieles mehr finden. Schaut einfach vorbei!</div>
-							 <ImpressumIconPart>
-                 <ImpressumIcon>
-                   <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                 </ImpressumIcon>
-                 <ImpressumIcon>
-                   <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                 </ImpressumIcon>
-							 </ImpressumIconPart>
-							</EventText>
-            </EventBody>
-          </Wrapper>
-       );
-     }
-   }
-
-   export default NextEvent;
+export default NextEvent;

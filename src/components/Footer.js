@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import Icon from './common/Icon'
 
 
 
@@ -109,7 +110,7 @@ const Wrapper = styled.div`
 
         `;
 
-      const ImpressumIconPart = styled.div`
+      const IconContainer = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -207,25 +208,17 @@ const Wrapper = styled.div`
               </ImpressumPart>
             </ImpressumBox>
             <ImpressumIconBox>
-              <ImpressumIconPart>
-                <ImpressumIcon>
-                  <i className="fa fa-facebook-square fa-1x" aria-hidden="true"></i>
-                </ImpressumIcon>
-                <ImpressumIcon>
-                  <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
-                </ImpressumIcon>
-                <ImpressumIcon>
-                  <i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i>
-                </ImpressumIcon>
-                <ImpressumIcon>
-                  <i class="fa fa-phone fa-1x" aria-hidden="true"></i>
-                </ImpressumIcon>
-              </ImpressumIconPart>
-              <ImpressumIconPart>
+              <IconContainer>
+								<Icon className="fa fa-facebook-square fa-1x" />
+								<Icon className="fa fa-instagram fa-1x" />
+								<Icon className="fa fa-envelope-o fa-1x" />
+								<Icon className="fa fa-phone fa-1x"  />
+              </IconContainer>
+              <IconContainer>
                 <ImpressumIconArrow>
                   <i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
                 </ImpressumIconArrow>
-              </ImpressumIconPart>
+              </IconContainer>
             </ImpressumIconBox>
             <ImpressumLinkDesignBox>
               <ImpressumLinkBox>
