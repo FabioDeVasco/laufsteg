@@ -8,7 +8,6 @@ const Wrapper = styled.div`
 	justify-content: center;
   height: 650px;
 	padding-top: 8rem;
-	margin-top: -5rem;
 `;
 
 const AboutBody = styled.div`

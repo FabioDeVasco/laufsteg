@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Font, FONT_URL } from '../../utils';
-
+import * as Scroll from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Navi = styled.div`
 	display: flex;
@@ -28,7 +29,7 @@ const Links = styled.div`
 	margin-bottom: 2rem;
 `;
 
-const LinksName = styled.div`
+const SuperLink = styled(Link)`
 	font-size: 9pt;
 	color: white;
 	margin-bottom: 2rem;
@@ -43,7 +44,7 @@ const Event = styled.div`
 	margin-top: 6rem;
 `;
 
-const EventName = styled.div`
+const EventName = styled(Link)`
 	font-size: 9pt;
 	color: #ED024B;
 	font-weight: bold;
@@ -54,39 +55,67 @@ const EventDate = styled.div`
 	color: white;
 `;
 
-const Navigation = ({eventDate}) => {
+const Navigation = ({ eventDate }) => {
+  return (
+    <Navi>
+      <Opening>
+        <div>Öffnungszeiten</div>
+        {' '}
 
+        <div>Mo.-Fr.</div>
+        {' '}
+        <div>10.00-18.00 Uhr</div>
+        {' '}
 
-    return (
-      <Navi>
-        <Opening>
-          <div>Öffnungszeiten</div>
-          {' '}
-
-          <div>Mo.-Fr.</div>
-          {' '}
-          <div>10.00-18.00 Uhr</div>
-          {' '}
-
-          <div>Sa.</div>
-          {' '}
-          <div>10.00-17.00 Uhr</div>
-        </Opening>
-        <Event>
-          <EventName>
-            Nightshopping
-          </EventName>
-          <EventDate>
-            {eventDate}
-          </EventDate>
-        </Event>
-        <Links>
-          <LinksName>Kontakt</LinksName>
-          <LinksName>Über uns</LinksName>
-          <LinksName>Unsere Marken</LinksName>
-        </Links>
-      </Navi>
-    )
-  }
+        <div>Sa.</div>
+        {' '}
+        <div>10.00-17.00 Uhr</div>
+      </Opening>
+      <Event>
+        <EventName
+          to="next-event"
+          spy={true}
+          smooth={true}
+          offset={190}
+          duration={500}
+        >
+          Nightshopping
+        </EventName>
+        <EventDate>
+          {eventDate}
+        </EventDate>
+      </Event>
+      <Links>
+        <SuperLink
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={120}
+          duration={500}
+        >
+          Kontakt
+        </SuperLink>
+        <SuperLink
+          to="about-us"
+          spy={true}
+          smooth={true}
+          offset={160}
+          duration={500}
+        >
+          Über uns
+        </SuperLink>
+        <SuperLink
+          to="brands"
+          spy={true}
+          smooth={true}
+          offset={150}
+          duration={500}
+        >
+          Unsere Marken
+        </SuperLink>
+      </Links>
+    </Navi>
+  );
+};
 
 export default Navigation;
