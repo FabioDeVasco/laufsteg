@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
   background-color: #606060;
-	height: 680px;
+	height: 620px;
 	padding-top: 4rem;
   `;
 
@@ -19,7 +19,7 @@ const ContactBody = styled.div`
   flex-direction: row;
 	justify-content: space-between;
 	align-items: stretch;
-  margin-top: 9rem;
+  margin-top: 7rem;
   margin-left: 6rem;
   margin-right: 6rem;
 	margin-bottom: -5rem;
