@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Font, FONT_URL } from '../utils';
 import Navigation from './headerComponents/Navigation.js';
 import Brand from './headerComponents/Brand.js';
-import AccentTitle from './common/AccentTitle.js';
+import AccentTitle from './headerComponents/AccentTitle.js';
 
 const Wrapper = styled.div`
 	display: flex;

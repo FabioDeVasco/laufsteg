@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import SectionTitle from './common/SectionTitle';
 import Icon from './common/Icon'
+import Flyer from './nextEventComponents/Flyer';
 
 const Wrapper = styled.div`
 	display: flex;
@@ -18,19 +19,19 @@ const EventBody = styled.div`
 	margin-top: 3rem;
   `;
 
-const EventPicture = styled.div`
-  flex:1;
-  background-image: url(${require('../assets/images/Eventpic.png')});
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 17rem;
-  padding-top: 17rem;
-  margin-left: 6rem;
-	margin-top: 2rem;
-	border: 3px solid;
-	border-color: white;
-  `;
+// const EventPicture = styled.div`
+//   flex:1;
+//   background-image: url(${require('../assets/images/Eventpic.png')});
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   padding-bottom: 17rem;
+//   padding-top: 17rem;
+//   margin-left: 6rem;
+// 	margin-top: 2rem;
+// 	border: 3px solid;
+// 	border-color: white;
+//   `;
 
 const EventText = styled.div`
   display: flex;
@@ -59,7 +60,7 @@ class NextEvent extends Component {
       <Wrapper>
         <SectionTitle title="Fashion meets Party" />
         <EventBody>
-          <EventPicture />
+          <Flyer eventDate="07.10.16" dayName="Freitag" time="18:00 /22:00 Uhr" dj="Jordi /Mata" reference="Creme 21 - Südklang"/>
           <EventText>
             <div>
               Zwei mal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips um euch die neue Kollektionen vorzustellen.
