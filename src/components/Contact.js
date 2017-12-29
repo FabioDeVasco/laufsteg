@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Font, FONT_URL } from '../utils';
 
 import SectionTitle from './common/SectionTitle';
 import BackgroundImage from './common/BackgroundImage';
@@ -79,6 +80,7 @@ const Insta = styled.div`
 	border-color: white;
 	margin-right: 1rem;
 	margin-bottom: 1rem;
+	cursor: pointer;
 
 
 	&::before {
@@ -109,6 +111,7 @@ border: solid 3px;
 border-color: white;
 margin-right: 1rem;
 margin-bottom: 1rem;
+cursor: pointer;
 
 
 &::before {
@@ -161,6 +164,7 @@ const Info = styled.div`
 	font-size: .9rem;
 	letter-spacing: 1px;
 	font-weight: bold;
+	font-family: ${Font.SECONDARY};
 
 `;
 
@@ -177,6 +181,7 @@ const Address = styled.div`
 	font-size: .9rem;
 	letter-spacing: 1px;
 	font-weight: bold;
+	font-family: ${Font.SECONDARY};
 `;
 
 const Form = styled.form`

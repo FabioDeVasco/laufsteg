@@ -20,6 +20,7 @@ const Opening = styled.div`
 	font-size: 8pt;
 	color: white;
 	margin-top: 1.5rem;
+	font-family: ${Font.SECONDARY};
 `;
 
 const Links = styled.div`
@@ -53,6 +54,7 @@ const EventName = styled(Link)`
 const EventDate = styled.div`
 	font-size: 9pt;
 	color: white;
+	font-family: ${Font.SECONDARY};
 `;
 
 const Navigation = ({ eventDate }) => {

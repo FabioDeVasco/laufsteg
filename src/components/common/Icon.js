@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.i`
   margin: 1rem;
   color: ${props => (props.color ? props.color : 'black')};
+  cursor: pointer;
 `;
 
 const Icon = ({ className, color }) => {

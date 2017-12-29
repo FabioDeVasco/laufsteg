@@ -23,8 +23,8 @@ const Wrapper = styled.div`
   	bottom: 0;
   	z-index: -1;
   	background-size: cover;
-  	background-image: url(${require('../../assets/images/Eventpic.png')});
-
+  	background-image: url(${require('../../assets/images/EventPicture.jpg')});
+    background-position: center;
   }
 
   `;
@@ -54,6 +54,7 @@ const DayDate = styled.div`
   font-weight: bold;
   letter-spacing: 9px;
   margin-top: -1rem;
+  font-family: ${Font.SECONDARY};
   `;
 
 const InfoContainer = styled.div`
@@ -88,6 +89,7 @@ const Time = styled.div`
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: -0.5rem;
+  font-family: ${Font.SECONDARY};
   `;
 
 const MusicContainer = styled.div`
@@ -105,7 +107,7 @@ const MusicBy = styled.div`
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: -0.5rem;
-    font-family: ${Font.SECONDARY};
+    font-family: ${Font.TERTIARY};
     `;
 
 const Dj = styled.div`
@@ -113,16 +115,15 @@ const Dj = styled.div`
     font-size: 15pt;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: ${Font.SECONDARY};
-    margin-top: -0.5rem;
+    font-family: ${Font.TERTIARY};
     `;
 
 const Reference = styled.div`
-    color: #BCBCBC;
+    color: white;
     font-size: 8pt;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: -0.5rem;
+    font-family: ${Font.SECONDARY};
     `;
 
 const Flyer = ({ eventDate, dayName, time, dj, reference }) => {

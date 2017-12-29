@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Font, FONT_URL } from '../utils';
 import Icon from './common/Icon';
 import * as Scroll from 'react-scroll';
 import { animateScroll as scroll } from 'react-scroll';
@@ -10,14 +11,13 @@ const Wrapper = styled.div`
 	justify-content: center;
   background-color: #DDDDDD;
   margin-top: 20rem;
-  `;
+`;
 
 const Intro = styled.div`
   	display: flex;
   	flex-direction: row;
   	justify-content: center;
-
-    `;
+  `;
 
 const IntroSpacer = styled.div`
       display: flex;
@@ -28,8 +28,7 @@ const IntroSpacer = styled.div`
       margin-right:1rem;
       padding-top: 2rem;
       width: 28rem;
-
-      `;
+    `;
 
 const IntroTitel = styled.div`
       display: flex;
@@ -41,8 +40,7 @@ const IntroTitel = styled.div`
       color: black;
       text-transform: uppercase;
       margin-bottom: 1rem;
-
-      `;
+    `;
 
 const Brand = styled.div`
       	border-color: black;
@@ -56,7 +54,6 @@ const Brand = styled.div`
       	margin-top: 2rem;
         margin-bottom: 2rem;
 				text-transform: uppercase;
-
       `;
 
 const ImpressumBox = styled.div`
@@ -65,7 +62,6 @@ const ImpressumBox = styled.div`
         justify-content: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-
       `;
 
 const ImpressumPart = styled.div`
@@ -74,8 +70,7 @@ const ImpressumPart = styled.div`
         justify-content: center;
         margin-left: 2rem;
         margin-right: 2rem;
-
-        `;
+      `;
 
 const ImpressumTitel = styled.div`
         display: flex;
@@ -84,8 +79,7 @@ const ImpressumTitel = styled.div`
         text-transform: uppercase;
         text-align: left;
         margin-bottom: 1rem;
-
-        `;
+      `;
 
 const ImpressumText = styled.div`
         display: flex;
@@ -95,23 +89,20 @@ const ImpressumText = styled.div`
         text-align: justify;
         line-height: 1.8rem;
         color: black;
-
-
-        `;
+				font-family: ${Font.SECONDARY};
+      `;
 
 const ImpressumIconBox = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        `;
+      `;
 
 const IconContainer = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: center;
-
-        `;
+      `;
 
 const ImpressumIcon = styled.div`
         display: flex;
@@ -120,8 +111,8 @@ const ImpressumIcon = styled.div`
         color: black;
         margin-left: 0.8rem;
         margin-right: 0.8rem;
-
-        `;
+				cursor: pointer;
+      `;
 
 const ImpressumIconArrow = styled.div`
         display: flex;
@@ -139,15 +130,14 @@ const ImpressumLinkDesignBox = styled.div`
         margin-left: 6rem;
         margin-right: 6rem;
         margin-bottom: 2rem
-
-        `;
+      `;
 
 const ImpressumLinkBox = styled.div`
         display: flex;
         color:  #ED024B;
         width: 50%;
-
-        `;
+				cursor: pointer;
+      `;
 
 const ImpressumDesignBox = styled.div`
         display: flex;
@@ -155,10 +145,7 @@ const ImpressumDesignBox = styled.div`
         font-style: italic;
         color: black;
         width: 50%;
-
-
-
-        `;
+      `;
 
 class Footer extends Component {
   scrollToTop() {

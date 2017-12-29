@@ -69,13 +69,10 @@ class App extends Component {
 
 injectGlobal([
   `
-  @font-face {
-    font-family: ${Font.PRIMARY};
-    font-family: ${Font.SECONDARY};
-    src: url(${FONT_URL});
-  }
+  @import url(${FONT_URL});
 
-  body {
+
+  html, body {
     font-family: ${Font.PRIMARY};
     margin: 0;
   }
