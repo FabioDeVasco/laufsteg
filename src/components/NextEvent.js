@@ -19,20 +19,6 @@ const EventBody = styled.div`
 	margin-top: 3rem;
   `;
 
-// const EventPicture = styled.div`
-//   flex:1;
-//   background-image: url(${require('../assets/images/Eventpic.png')});
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   padding-bottom: 17rem;
-//   padding-top: 17rem;
-//   margin-left: 6rem;
-// 	margin-top: 2rem;
-// 	border: 3px solid;
-// 	border-color: white;
-//   `;
-
 const EventText = styled.div`
   display: flex;
   flex-direction: column;
@@ -76,8 +62,8 @@ class NextEvent extends Component {
               Auf unseren sozialen Netzwerken könnt ihr Fotos von unseren Events und vieles mehr finden. Schaut einfach vorbei!
             </div>
             <IconContainer>
-              <Icon className="fa fa-facebook-square fa-2x" color="#606060" />
-              <Icon className="fa fa-instagram fa-2x" color="#606060" />
+              <Icon className="fa fa-facebook-square fa-2x" colorNormal="#606060" colorActive="#3b5998"/>
+              <Icon className="fa fa-instagram fa-2x" colorNormal="#606060" colorActive="#cd486b"/>
             </IconContainer>
           </EventText>
         </EventBody>

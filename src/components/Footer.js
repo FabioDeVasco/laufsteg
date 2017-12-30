@@ -121,7 +121,9 @@ const ImpressumIconArrow = styled.div`
         color: #ED024B;
         margin-top: 2rem;
 				cursor: pointer;
-
+				&:hover {
+			    color: black;
+			  }
         `;
 
 const ImpressumLinkDesignBox = styled.div`
@@ -135,17 +137,21 @@ const ImpressumLinkDesignBox = styled.div`
 const ImpressumLinkBox = styled.div`
         display: flex;
         color:  #ED024B;
-        width: 50%;
+
 				cursor: pointer;
+				&:hover {
+			    color: black;
+			  }
+
       `;
 
-const ImpressumDesignBox = styled.div`
-        display: flex;
-        justify-content: flex-end;
-        font-style: italic;
-        color: black;
-        width: 50%;
-      `;
+// const ImpressumDesignBox = styled.div`
+//         display: flex;
+//         justify-content: flex-end;
+//         font-style: italic;
+//         color: black;
+//         width: 50%;
+//       `;
 
 class Footer extends Component {
   scrollToTop() {
@@ -196,10 +202,10 @@ class Footer extends Component {
         </ImpressumBox>
         <ImpressumIconBox>
           <IconContainer>
-            <Icon className="fa fa-facebook-square fa-1x" />
-            <Icon className="fa fa-instagram fa-1x" />
-            <Icon className="fa fa-envelope-o fa-1x" />
-            <Icon className="fa fa-phone fa-1x" />
+            <Icon className="fa fa-facebook-square fa-1x" colorNormal="black" colorActive="#ED024B"/>
+            <Icon className="fa fa-instagram fa-1x" colorNormal="black" colorActive="#ED024B"/>
+            <Icon className="fa fa-envelope-o fa-1x" colorNormal="black" colorActive="#ED024B"/>
+            <Icon className="fa fa-phone fa-1x" colorNormal="black" colorActive="#ED024B"/>
           </IconContainer>
           <IconContainer>
             <ImpressumIconArrow onClick={this.scrollToTop}>
@@ -211,9 +217,6 @@ class Footer extends Component {
           <ImpressumLinkBox>
             Impressum
           </ImpressumLinkBox>
-          <ImpressumDesignBox>
-            Design @ Zackteck
-          </ImpressumDesignBox>
         </ImpressumLinkDesignBox>
       </Wrapper>
     );

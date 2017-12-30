@@ -207,15 +207,15 @@ class Contact extends Component {
           <ContactDetails>
             <ContactTile>
               <Insta>
-                <Icon className="fa fa-instagram fa-3x" color="#F5F5F5" />
+                <Icon className="fa fa-instagram fa-3x" colorNormal="#F5F5F5" colorActive="#cd486b" />
               </Insta>
               <Face>
-                <Icon className="fa fa-facebook-square fa-3x" color="#F5F5F5" />
+                <Icon className="fa fa-facebook-square fa-3x" colorNormal="#F5F5F5" colorActive="#3b5998" />
               </Face>
             </ContactTile>
             <ContactTile>
               <Info>
-                <Icon className="fa fa-phone fa-3x" color="white" />
+                <Icon className="fa fa-phone fa-3x" colorNormal="#F5F5F5" colorActive="#606060" />
                 {' '}
                 <div>+49 7131  20 31 881</div>
                 {' '}
