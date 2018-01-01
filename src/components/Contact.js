@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { Font, FONT_URL } from '../utils';
 
 import SectionTitle from './common/SectionTitle';
-import BackgroundImage from './common/BackgroundImage';
 import Icon from './common/Icon';
-import Location from './Location';
+import Location from './contactComponents/Location';
 
 const Wrapper = styled.div`
 	display: flex;

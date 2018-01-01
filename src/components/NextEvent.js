@@ -62,8 +62,8 @@ class NextEvent extends Component {
               Auf unseren sozialen Netzwerken könnt ihr Fotos von unseren Events und vieles mehr finden. Schaut einfach vorbei!
             </div>
             <IconContainer>
-              <Icon className="fa fa-facebook-square fa-2x" colorNormal="#606060" colorActive="#3b5998"/>
-              <Icon className="fa fa-instagram fa-2x" colorNormal="#606060" colorActive="#cd486b"/>
+              <Icon className="fa fa-facebook-square fa-2x" colorNormal="#606060" colorActive="#3b5998" href="https://de-de.facebook.com/Laufsteg-Heilbronn-361537650674287/"/>
+              <Icon className="fa fa-instagram fa-2x" colorNormal="#606060" colorActive="#cd486b" href="https://www.instagram.com/laufsteg.heilbronn/"/>
             </IconContainer>
           </EventText>
         </EventBody>

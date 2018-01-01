@@ -202,10 +202,10 @@ class Footer extends Component {
         </ImpressumBox>
         <ImpressumIconBox>
           <IconContainer>
-            <Icon className="fa fa-facebook-square fa-1x" colorNormal="black" colorActive="#ED024B"/>
-            <Icon className="fa fa-instagram fa-1x" colorNormal="black" colorActive="#ED024B"/>
-            <Icon className="fa fa-envelope-o fa-1x" colorNormal="black" colorActive="#ED024B"/>
-            <Icon className="fa fa-phone fa-1x" colorNormal="black" colorActive="#ED024B"/>
+            <Icon className="fa fa-facebook-square fa-1x" colorNormal="black" colorActive="#ED024B" href="https://de-de.facebook.com/Laufsteg-Heilbronn-361537650674287/"/>
+            <Icon className="fa fa-instagram fa-1x" colorNormal="black" colorActive="#ED024B" href="https://www.instagram.com/laufsteg.heilbronn/"/>
+            <Icon className="fa fa-envelope-o fa-1x" colorNormal="black" colorActive="#ED024B" href="mailto:laufsteg.heilbronn@t-online.de"/>
+            <Icon className="fa fa-phone fa-1x" colorNormal="black" colorActive="#ED024B" href="tel:+4971312031881"/>
           </IconContainer>
           <IconContainer>
             <ImpressumIconArrow onClick={this.scrollToTop}>

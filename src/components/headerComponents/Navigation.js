@@ -79,7 +79,7 @@ const Navigation = ({ eventDate }) => {
           spy={true}
           smooth={true}
           offset={190}
-          duration={500}
+          duration={900}
         >
           Nightshopping
         </EventName>
@@ -93,7 +93,7 @@ const Navigation = ({ eventDate }) => {
           spy={true}
           smooth={true}
           offset={120}
-          duration={500}
+          duration={1000}
         >
           Kontakt
         </SuperLink>
@@ -102,7 +102,7 @@ const Navigation = ({ eventDate }) => {
           spy={true}
           smooth={true}
           offset={160}
-          duration={500}
+          duration={1100}
         >
           Über uns
         </SuperLink>
@@ -111,7 +111,7 @@ const Navigation = ({ eventDate }) => {
           spy={true}
           smooth={true}
           offset={150}
-          duration={500}
+          duration={1200}
         >
           Unsere Marken
         </SuperLink>
