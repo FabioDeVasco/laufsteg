@@ -5,6 +5,8 @@ import { Font, FONT_URL } from '../utils';
 import SectionTitle from './common/SectionTitle';
 import Icon from './common/Icon';
 import Location from './contactComponents/Location';
+import SocialMedia from './contactComponents/SocialMedia';
+import InfoCall from './contactComponents/InfoCall';
 
 const Wrapper = styled.div`
 	display: flex;
@@ -66,69 +68,6 @@ const ContactForm = styled.form`
 	}
 `;
 
-const Insta = styled.div`
-  display: flex;
-	position: relative;
-	flex-basis: 50%;
-	z-index: 1;
-	background-color: black;
-	align-items: center;
-	justify-content: center;
-	align-items: center;
-	border: solid 3px;
-	border-color: white;
-	margin-right: 1rem;
-	margin-bottom: 1rem;
-	cursor: pointer;
-
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: -1;
-		background-size: cover;
-		background-image: url(${require('../assets/images/Instagrampic.png')});
-		filter: blur(0.3px);
-		opacity: 0.75;
-	}
-
-`;
-
-const Face = styled.div`
-display: flex;
-position: relative;
-flex-basis: 50%;
-z-index: 1;
-background-color: black;
-align-items: center;
-justify-content: center;
-border: solid 3px;
-border-color: white;
-margin-right: 1rem;
-margin-bottom: 1rem;
-cursor: pointer;
-
-
-&::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	background-size: cover;
-	background-image: url(${require('../assets/images/Facebookpic.png')});
-	filter: blur(0.3px);
-	opacity: 0.75;
-}
-
-`;
-
 const InfoAdress = styled.div`
   display: flex;
 	position: relative;
@@ -146,25 +85,9 @@ const InfoAdress = styled.div`
 	letter-spacing: 1px;
 	font-weight: bold;
 
-`;
-const Info = styled.div`
-  display: flex;
-	position: relative;
-  flex-direction: column;
-  color: white;
-  font-size: 12pt;
-  background-color: grey;
-  text-align: center;
-	justify-content: center;
-  border: solid 3px;
-  border-color: withe;
-	margin-right: 1rem;
-	flex-basis: 50%;
-	font-size: .9rem;
-	letter-spacing: 1px;
-	font-weight: bold;
-	font-family: ${Font.SECONDARY};
-
+	&:hover {
+    border-color: #FFD5C9;
+	}
 `;
 
 const Address = styled.div`
@@ -205,27 +128,34 @@ class Contact extends Component {
         <ContactBody>
           <ContactDetails>
             <ContactTile>
-              <Insta>
-                <Icon className="fa fa-instagram fa-3x" colorNormal="#F5F5F5" colorActive="#cd486b" />
-              </Insta>
-              <Face>
-                <Icon className="fa fa-facebook-square fa-3x" colorNormal="#F5F5F5" colorActive="#3b5998" />
-              </Face>
+              <SocialMedia
+                image={require('../assets/images/Instagrampic.png')}
+                className="fa fa-instagram fa-3x"
+                colorNormal="#F5F5F5"
+                colorActive="#cd486b"
+                href="https://www.instagram.com/laufsteg.heilbronn/"
+              />
+              <SocialMedia
+                image={require('../assets/images/Facebookpic.png')}
+                className="fa fa-facebook-square fa-3x"
+                colorNormal="#F5F5F5"
+                colorActive="#3b5998"
+                href="https://de-de.facebook.com/Laufsteg-Heilbronn-361537650674287/"
+              />
             </ContactTile>
             <ContactTile>
-              <Info>
-                <Icon className="fa fa-phone fa-3x" colorNormal="#F5F5F5" colorActive="#606060" />
-                {' '}
-                <div>+49 7131  20 31 881</div>
-                {' '}
-                <div>Innerhalb der Öffnungszeiten</div>
-              </Info>
+              <InfoCall
+                className="fa fa-phone fa-3x"
+                colorNormal="#F5F5F5"
+                colorActive="#DAF7B1"
+                href="tel:+4971312031881"
+              />
               <InfoAdress>
                 <Location />
-								<Address>
-									Biedermanngasse 4<br />
-									74072 Heilbronn
-								</Address>
+                <Address>
+                  Biedermanngasse 4<br />
+                  74072 Heilbronn
+                </Address>
               </InfoAdress>
             </ContactTile>
           </ContactDetails>

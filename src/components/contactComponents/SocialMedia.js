@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from './common/Icon';
-
+import Icon from '../common/Icon';
 
 const Wrapper = styled.a`
 display: flex;
@@ -18,7 +17,10 @@ margin-bottom: 1rem;
 cursor: pointer;
 
 &:hover {
-  color: ${props => props.colorActive}
+  border-color: ${props => props.colorActive};
+  .icon {
+    color: ${props => props.colorActive};
+  }
 }
 
 &::before {
@@ -37,17 +39,23 @@ cursor: pointer;
 
 `;
 
-
-
-
-const SocialMedia = ({ className, colorNormal, colorActive, href, image}) => {
-
-
-  return
-
-   <Wrapper colorNormal={colorNormal} colorActive={colorActive} href={href} image={image}>
-   <Icon className={className} colorNormal={colorNormal} colorActive={colorActive} href={href} aria-hidden="true" />
-  </Wrapper>
+const SocialMedia = ({ className, colorNormal, colorActive, href, image }) => {
+  return (
+    <Wrapper
+      colorNormal={colorNormal}
+      colorActive={colorActive}
+      href={href}
+      image={image}
+    >
+      <Icon
+        className={className}
+        colorNormal={colorNormal}
+        colorActive={colorActive}
+        href={href}
+        aria-hidden="true"
+      />
+    </Wrapper>
+  );
 };
 
 export default SocialMedia;
