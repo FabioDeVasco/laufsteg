@@ -2,73 +2,171 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import SectionTitle from './common/SectionTitle';
 
-
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
   background-color: #606060;
-  height: 550px;
-	padding-top: 8rem;
-  `;
+  ${/* height: 650px; */ ''}
+	position: relative;
 
-  const BrandsConatiner = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 3.5rem;
-  margin-bottom: 4rem;
-    `;
+	padding: 8rem 1rem 2rem 1rem;
 
+	@media (min-width: 480px) {
+		padding: 8rem 1.25rem 2rem 1.25rem;
+	}
 
-  const BrandsBody = styled.div`
+	@media (min-width: 768px) {
+		padding: 8rem 1.5rem 2rem 1.5rem;
+	}
+
+	@media (min-width: 992px) {
+		padding: 8rem 2rem 2rem 2rem;
+	}
+`;
+
+const WhiteBackground = styled.div`
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+
+	height: 100%;
+
+	@media (min-width: 480px) {
+		height: 52%;
+	}
+
+	@media (min-width: 768px) {
+		height: 40%;
+	}
+
+	@media (min-width: 992px) {
+		height: 40%;
+	}
+
+`;
+
+const Logos = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 5rem 6rem 2rem 6rem;
-  `;
+	flex-wrap: wrap;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+	max-width: 1024px;
+	align-self: center;
+	justify-content: center;
+`;
 
-  const BrandsLogo = styled.img`
-  display: flex;
-  position:  static;
-  height: 70px;
-  `;
+const Logo = styled.img`
+	padding: 1rem;
+	z-index: 2;
+	width: 100px;
+	height: 100%;
 
+	@media (min-width: 480px) {
+		width: 120px;
+	}
 
+	@media (min-width: 768px) {
+		width: 140px;
+	}
 
-  class Brands extends Component {
-    render() {
-      return (
-          <Wrapper>
-            <SectionTitle title="Unsere Marken"/>
-            <BrandsConatiner>
-            <BrandsBody>
-              <BrandsLogo src={require('../assets/images/brands/rosemundelogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/codello.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/voluspalogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/mazelogo.png')} alt="BrandsLogo"></BrandsLogo>
-            </BrandsBody>
-            <BrandsBody>
-              <BrandsLogo src={require('../assets/images/brands/bbeltlogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/custommadelogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/rockrevivallogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/gestuzlogo.png')} alt="BrandsLogo"></BrandsLogo>
-            </BrandsBody>
-            <BrandsBody>
-              <BrandsLogo src={require('../assets/images/brands/bomboogielogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/rabenslogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/DELICATELOVElogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/81hourslogo.png')} alt="BrandsLogo"></BrandsLogo>
-            </BrandsBody>
-            <BrandsBody>
-              <BrandsLogo src={require('../assets/images/brands/campomaggilogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/juvialogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/lovestorieslogo.png')} alt="BrandsLogo"></BrandsLogo>
-              <BrandsLogo src={require('../assets/images/brands/ragandbonelogo.png')} alt="BrandsLogo"></BrandsLogo>
-            </BrandsBody>
-            </BrandsConatiner>
-          </Wrapper>
-       );
-     }
-   }
+	@media (min-width: 992px) {
+		width: 200px;
+	}
+`;
 
-   export default Brands;
+class Brands extends Component {
+  render() {
+    return (
+      <Wrapper>
+        <WhiteBackground />
+        <SectionTitle title="Unsere Marken" />
+        <Logos>
+          <Logo
+            src={require('../assets/images/brands/rosemunde.png')}
+            alt="BrandsLogo"
+          />
+          <Logo
+            src={require('../assets/images/brands/codello.png')}
+            alt="BrandsLogo"
+          />
+          <Logo
+            src={require('../assets/images/brands/voluspa.png')}
+            alt="BrandsLogo"
+          />
+          <Logo
+            src={require('../assets/images/brands/maze.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/bbelt.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/custommade.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/rockrevival.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/gestuz.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/bomboogie.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/rabens.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/delicatelove.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/81hours.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/campomaggi.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/juvia.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/lovestories.png')}
+            alt="BrandsLogo"
+          />
+
+          <Logo
+            src={require('../assets/images/brands/ragandbone.png')}
+            alt="BrandsLogo"
+          />
+
+        </Logos>
+      </Wrapper>
+    );
+  }
+}
+
+export default Brands;

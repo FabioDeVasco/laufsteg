@@ -9,7 +9,8 @@ const Wrapper = styled.a.attrs({
   cursor: pointer;
 
   &:hover {
-    color: ${props => props.colorActive}
+    color: ${props => props.colorActive};
+    transition: color 0.5s;
   }
 `;
 

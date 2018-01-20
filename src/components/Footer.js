@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #DDDDDD;
-  margin-top: 20rem;
+  ${''/* margin-top: 20rem; */}
 `;
 
 const Intro = styled.div`
@@ -123,6 +123,7 @@ const ImpressumIconArrow = styled.div`
 				cursor: pointer;
 				&:hover {
 			    color: black;
+					transition: color 0.75s;
 			  }
         `;
 
@@ -141,6 +142,7 @@ const ImpressumLinkBox = styled.div`
 				cursor: pointer;
 				&:hover {
 			    color: black;
+					transition: color 0.75s;
 			  }
 
       `;

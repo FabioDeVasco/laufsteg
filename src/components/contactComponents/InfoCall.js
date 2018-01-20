@@ -22,13 +22,18 @@ const Wrapper = styled.a`
 	font-weight: bold;
 	font-family: ${Font.SECONDARY};
 
-  &:hover {
-    border-color: ${props => props.colorActive};
-    .icon {
-      color: ${props => props.colorActive};
+    &:hover {
+      border-color: ${props => props.colorActive};
+      color: white;
+      transition: border-color 0.9s;
+      .icon {
+        color: ${props => props.colorActive};
+
       }
     }
-  `;
+
+  }
+`;
 
 const InfoCall = ({ className, colorNormal, colorActive, href }) => {
   return (

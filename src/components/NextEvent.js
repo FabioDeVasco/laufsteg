@@ -17,6 +17,9 @@ const EventBody = styled.div`
   flex-direction: row;
   justify-content: center;
 	margin-top: 3rem;
+	@media (max-width: 700px) {
+    flex-direction: column;
+  }
   `;
 
 const EventText = styled.div`
@@ -30,6 +33,25 @@ const EventText = styled.div`
 	margin-left: 8rem;
   margin-top: 2rem;
   line-height: 1.8rem;
+
+	@media (max-width: 900px) {
+    margin-right: 3rem;}
+	@media (max-width: 1120px) {
+    font-size: 12pt;
+		margin-left: 3rem;}
+	@media (max-width: 700px) {
+	  font-size: 12pt;
+		margin-left: 2rem;}
+  @media (max-width: 520px) {
+    font-size: 11pt;
+    letter-spacing: 1px;
+	  margin-left: 1rem;}
+  @media (max-width: 370px) {
+    font-size: 10pt;
+    letter-spacing: 0px;}
+  @media (max-width: 300px) {
+    font-size: 9pt;
+	}
   `;
 
 const IconContainer = styled.div`

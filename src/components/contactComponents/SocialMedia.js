@@ -18,6 +18,7 @@ cursor: pointer;
 
 &:hover {
   border-color: ${props => props.colorActive};
+  transition: border-color 0.75s;
   .icon {
     color: ${props => props.colorActive};
   }

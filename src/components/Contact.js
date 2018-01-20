@@ -86,7 +86,8 @@ const InfoAdress = styled.div`
 	font-weight: bold;
 
 	&:hover {
-    border-color: #FFD5C9;
+    border-color: #908C8C;
+		transition: border-color 0.75s;
 	}
 `;
 
@@ -147,7 +148,7 @@ class Contact extends Component {
               <InfoCall
                 className="fa fa-phone fa-3x"
                 colorNormal="#F5F5F5"
-                colorActive="#DAF7B1"
+                colorActive="#A99D73"
                 href="tel:+4971312031881"
               />
               <InfoAdress>
