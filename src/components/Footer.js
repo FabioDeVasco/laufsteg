@@ -67,7 +67,6 @@ const ImpressumBox = styled.div`
 const ImpressumPart = styled.div`
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-left: 2rem;
         margin-right: 2rem;
       `;

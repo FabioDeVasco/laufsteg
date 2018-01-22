@@ -7,22 +7,9 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
   background-color: #606060;
-  ${/* height: 650px; */ ''}
 	position: relative;
 
-	padding: 8rem 1rem 2rem 1rem;
-
-	@media (min-width: 480px) {
-		padding: 8rem 1.25rem 2rem 1.25rem;
-	}
-
-	@media (min-width: 768px) {
-		padding: 8rem 1.5rem 2rem 1.5rem;
-	}
-
-	@media (min-width: 992px) {
-		padding: 8rem 2rem 2rem 2rem;
-	}
+	padding-top: 8rem;
 `;
 
 const WhiteBackground = styled.div`
@@ -33,18 +20,21 @@ const WhiteBackground = styled.div`
 	background-color: white;
 	z-index: 1;
 
-	height: 100%;
+	height: 41%;
 
 	@media (min-width: 480px) {
-		height: 52%;
+		height: 31%;
 	}
 
 	@media (min-width: 768px) {
-		height: 40%;
+		height: 30%;
 	}
 
+	@media (min-width: 950px) {
+		height: 34%;
+	}
 	@media (min-width: 992px) {
-		height: 40%;
+		height: 38%;
 	}
 
 `;
@@ -53,29 +43,56 @@ const Logos = styled.div`
   display: flex;
   flex-direction: row;
 	flex-wrap: wrap;
-  margin-top: 3.5rem;
-  margin-bottom: 2rem;
-	max-width: 1024px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	align-self: center;
 	justify-content: center;
+	justify-content: space-between;
+
+
+	@media (min-width: 480px) {
+		margin-top: 2.5rem;
+	  margin-bottom: 1rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	@media (min-width: 768px) {
+		margin-top: 2.5rem;
+	  margin-bottom: 2rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	@media (min-width: 992px) {
+		margin-top: 3.5rem;
+	  margin-bottom: 4rem;
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
 `;
 
 const Logo = styled.img`
-	padding: 1rem;
+	padding: 0rem;
 	z-index: 2;
-	width: 100px;
+	width: 90px;
 	height: 100%;
 
 	@media (min-width: 480px) {
 		width: 120px;
+		padding: 0.5rem;
 	}
 
 	@media (min-width: 768px) {
 		width: 140px;
+		padding: 1rem;
 	}
 
 	@media (min-width: 992px) {
 		width: 200px;
+		padding: 1rem;
 	}
 `;
 
@@ -109,12 +126,12 @@ class Brands extends Component {
           />
 
           <Logo
-            src={require('../assets/images/brands/custommade.png')}
+            src={require('../assets/images/brands/rockrevival.png')}
             alt="BrandsLogo"
           />
 
           <Logo
-            src={require('../assets/images/brands/rockrevival.png')}
+            src={require('../assets/images/brands/custommade.png')}
             alt="BrandsLogo"
           />
 
