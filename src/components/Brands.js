@@ -6,10 +6,12 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  background-color: #606060;
+  background-color: white;
 	position: relative;
 
-	padding-top: 8rem;
+	@media (min-width: 480px) {
+		background-color: #606060;
+	}
 `;
 
 const WhiteBackground = styled.div`
@@ -19,22 +21,21 @@ const WhiteBackground = styled.div`
 	width: 100%;
 	background-color: white;
 	z-index: 1;
-
-	height: 41%;
+	height: 40%;
 
 	@media (min-width: 480px) {
-		height: 31%;
+		height: 38%;
 	}
 
 	@media (min-width: 768px) {
-		height: 30%;
+		height: 40%;
 	}
 
-	@media (min-width: 950px) {
-		height: 34%;
+	@media (min-width: 968px) {
+		height: 31%;
 	}
 	@media (min-width: 992px) {
-		height: 38%;
+		height: 42%;
 	}
 
 `;

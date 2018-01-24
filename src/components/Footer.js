@@ -195,7 +195,7 @@ class Footer extends Component {
             <ImpressumText>
               <div>Handelsregister: AG Stuttgart HRB 1234</div>
               {' '}
-              <div>Umsatzsteuer-Ident.-Nr.: DE XXXXXXXX</div>
+              <div>Umsatzsteuer-Ident.-Nr.: DE 298558434</div>
               {' '}
               <div>Inhaltlich Verantwortlicher: Fatma Öztoprak</div>
             </ImpressumText>

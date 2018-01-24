@@ -19,15 +19,36 @@ const Content = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 26pt;
+  font-size: 14pt;
   color: black;
-  letter-spacing: 15px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  padding-right: 4rem;
-  margin-bottom: .4rem;
+  padding-right: 0rem;
+  margin-bottom: 0.4rem;
 
-  @media (max-width: 800px) {
+  @media (min-width: 480px) {
+    font-size: 18pt;
+    letter-spacing: 3px;
+    padding-right: 1rem;
+	}
+
+	@media (min-width: 768px) {
+    font-size: 22pt;
+    letter-spacing: 7px;
+    padding-right: 3rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 26pt;
+    letter-spacing: 15px;
+    padding-right: 4rem;
+
+
+
+	}
+
+  ${''/* @media (max-width: 800px) {
     font-size: 20pt;}
   @media (max-width: 700px) {
     font-size: 18pt;
@@ -43,7 +64,7 @@ const Text = styled.div`
   @media (max-width: 300px) {
     font-size: 14pt;
     letter-spacing: 1px;
-    }
+    } */}
 `;
 
 const Border = styled.div`

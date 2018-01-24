@@ -15,6 +15,7 @@ const AboutBody = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-top: 4rem;
+	z-index: 2;
 `;
 
 const AboutPicture = styled.div`
@@ -41,6 +42,29 @@ const AboutText = styled.div`
   line-height: 1.8rem;
 `;
 
+const GreyBackground = styled.div`
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #606060;
+	z-index: 1;
+	height: 41%;
+
+	@media (min-width: 480px) {
+		height: 31%;
+	}
+
+	@media (min-width: 768px) {
+		height: 32%;
+	}
+
+	@media (min-width: 992px) {
+		height: 30%;
+	}
+
+`;
+
 class AboutUs extends Component {
   render() {
     return (
@@ -59,6 +83,7 @@ class AboutUs extends Component {
           </AboutText>
           <AboutPicture />
         </AboutBody>
+				<GreyBackground />
       </Wrapper>
     );
   }
