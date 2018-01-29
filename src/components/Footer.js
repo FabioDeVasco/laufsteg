@@ -96,13 +96,17 @@ const ImpressumPart = styled.div`
 				}
 
 				@media (min-width: 768px) {
+					margin-left: 0.3rem;
+					margin-right: 0.3rem;
+				}
+				@media (min-width: 890px) {
 					margin-left: 1rem;
-					margin-right: 1rem;
+	        margin-right: 1rem;
 				}
 
 				@media (min-width: 992px) {
-					margin-left: 2rem;
-	        margin-right: 2rem;
+					margin-left: 1.5rem;
+	        margin-right: 1.5rem;
 				}
       `;
 
@@ -145,6 +149,8 @@ const ImpressumText = styled.div`
         line-height: 1.8rem;
         color: black;
 				font-family: ${Font.SECONDARY};
+				white-space: pre;
+
 
 				@media (min-width: 480px) {
 					font-size: 10pt;
@@ -152,13 +158,24 @@ const ImpressumText = styled.div`
 				}
 
 				@media (min-width: 768px) {
-					font-size: 11pt;
+					font-size: 10pt;
 					text-align: justify;
+					line-height: 1.5rem;
+				}
+
+				@media (min-width: 890px) {
+					font-size: 10pt;
+					text-align: justify;
+
+
 				}
 
 				@media (min-width: 992px) {
 					font-size: 12pt;
 					text-align: justify;
+					white-space: pre;
+
+
 				}
       `;
 
