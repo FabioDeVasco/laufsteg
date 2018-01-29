@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	background-color: #606060;
-	height: 600px;
+	height: 800px;
 `;
 
 const Welcome = styled.div`
@@ -19,6 +19,7 @@ const Welcome = styled.div`
 	flex:6;
 	width: 90%;
 	text-transform: uppercase;
+	z-index: 2;
 `;
 
 const Titel = styled.div`
@@ -37,6 +38,32 @@ const WallpaperContainer = styled.div`
 	position: relative;
 `;
 
+const WhiteBackground = styled.div`
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	height: 40%;
+
+	@media (min-width: 480px) {
+		height: 38%;
+	}
+
+	@media (min-width: 768px) {
+		height: 40%;
+	}
+
+	@media (min-width: 968px) {
+		height: 31%;
+	}
+	@media (min-width: 992px) {
+		height: 12%;
+	}
+
+`;
+
 class Header extends Component {
   render() {
     return (
@@ -50,7 +77,9 @@ class Header extends Component {
 						<AccentTitle title= "Willkommen" />
 	          </WallpaperContainer>
 	        </Welcome>
+					<WhiteBackground/>
 	      </Wrapper>
+
     );
   }
 }

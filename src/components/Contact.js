@@ -12,32 +12,28 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
   background-color: #606060;
-	height: 620px;
-	padding-top: 4rem;
+	height: 800px;
+	${''/* padding-top: 4rem; */}
   `;
 
 const ContactBody = styled.div`
   display: flex;
   flex-direction: row;
-	justify-content: space-between;
-	align-items: stretch;
   margin-top: 7rem;
   margin-left: 6rem;
   margin-right: 6rem;
-	margin-bottom: -5rem;
 `;
 
 const ContactDetails = styled.div`
   display: flex;
   flex-direction: column;
-	justify-content: space-between;
 	flex-basis: 50%;
+
 `;
 
 const ContactTile = styled.div`
   display: flex;
   flex-direction: row;
-	justify-content: space-between;
 	flex-basis: 50%;
 
 `;
@@ -107,9 +103,6 @@ const Address = styled.div`
 	font-family: ${Font.SECONDARY};
 `;
 
-const Form = styled.form`
-	width: 500px;
-`;
 
 const Label = styled.label.attrs({ className: 'label' })`
 	color: white;
@@ -119,6 +112,29 @@ const Label = styled.label.attrs({ className: 'label' })`
 	font-size: .8rem;
 	letter-spacing: 1px;
 	color: #F5F5F5;
+`;
+
+const WhiteBackground = styled.div`
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: -1;
+	height: 41%;
+
+	@media (min-width: 480px) {
+		height: 31%;
+	}
+
+	@media (min-width: 768px) {
+		height: 32%;
+	}
+
+	@media (min-width: 992px) {
+		height: 15%;
+	}
+
 `;
 
 class Contact extends Component {
@@ -201,6 +217,7 @@ class Contact extends Component {
             </div>
           </ContactForm>
         </ContactBody>
+				<WhiteBackground />
       </Wrapper>
     );
   }

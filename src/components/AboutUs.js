@@ -6,8 +6,7 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  height: 650px;
-	padding-top: 8rem;
+  height: 800px;
 `;
 
 const AboutBody = styled.div`
@@ -60,7 +59,7 @@ const GreyBackground = styled.div`
 	}
 
 	@media (min-width: 992px) {
-		height: 30%;
+		height: 40%;
 	}
 
 `;

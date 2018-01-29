@@ -9,7 +9,6 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	height: 800px;
-	padding-top: 8rem;
 `;
 
 const EventBody = styled.div`
@@ -17,6 +16,7 @@ const EventBody = styled.div`
   flex-direction: row;
   justify-content: center;
 	margin-top: 3rem;
+	z-index: 2;
 	@media (max-width: 700px) {
     flex-direction: column;
   }
@@ -61,6 +61,29 @@ const IconContainer = styled.div`
 		margin-top: 2rem;
 	`;
 
+	const GreyBackground = styled.div`
+		position: relative;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #606060;
+		z-index: 1;
+		height: 41%;
+
+		@media (min-width: 480px) {
+			height: 31%;
+		}
+
+		@media (min-width: 768px) {
+			height: 32%;
+		}
+
+		@media (min-width: 992px) {
+			height: 20%;
+		}
+
+	`;
+
 
 class NextEvent extends Component {
   render() {
@@ -89,6 +112,7 @@ class NextEvent extends Component {
             </IconContainer>
           </EventText>
         </EventBody>
+				<GreyBackground />
       </Wrapper>
     );
   }

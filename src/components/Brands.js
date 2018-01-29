@@ -23,6 +23,8 @@ const WhiteBackground = styled.div`
 	z-index: 1;
 	height: 40%;
 
+
+
 	@media (min-width: 480px) {
 		height: 38%;
 	}
