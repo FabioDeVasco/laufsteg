@@ -10,12 +10,28 @@ const Wrapper = styled.div`
   flex:1;
   z-index: 1;
   border: 3px solid white;
-  margin-left: 6rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-top: 2rem;
 
 
-  @media (max-width: 1030px) {
-    height: 550px;;}
+  @media (min-width: 480px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 300px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 4rem;
+    height: 500px;
+    width: 320px;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: 6rem;
+    height: 550px;
+    width: 500px;
+  }
 
   &::before {
   	content: "";
@@ -52,12 +68,27 @@ const DayName = styled.div`
   `;
 
 const DayDate = styled.div`
-  font-size: 26pt;
+  font-size: 22pt;
   color: #ED024B;
   font-weight: bold;
-  letter-spacing: 9px;
+  letter-spacing: 6px;
   margin-top: -1rem;
   font-family: ${Font.SECONDARY};
+
+  @media (min-width: 480px) {
+    font-size: 24pt;
+    letter-spacing: 7px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 24pt;
+    letter-spacing: 9px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 28pt;
+    letter-spacing: 9px;
+  }
   `;
 
 const InfoContainer = styled.div`
@@ -78,12 +109,27 @@ const Title = styled.div`
   `;
 
 const Location = styled.div`
-  font-size: 28pt;
+  font-size: 22pt;
   color: #ED024B;
-  letter-spacing: 13px;
+  letter-spacing: 9px;
   margin-top: -0.5rem;
   text-transform: uppercase;
   margin-top: -0.5rem;
+
+  @media (min-width: 480px) {
+    font-size: 26pt;
+    letter-spacing: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 24pt;
+    letter-spacing: 11px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 28pt;
+    letter-spacing: 13px;
+  }
   `;
 
 const Time = styled.div`
@@ -100,25 +146,60 @@ const MusicContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin: 1.5rem;
+  margin: 2rem;
   padding: 0.5;
+  @media (min-width: 480px) {
+    margin: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    margin: 2rem;
+  }
+
+  @media (min-width: 992px) {
+    margin: 2rem;
+  }
   `;
 
 const MusicBy = styled.div`
-    font-size: 15pt;
+    font-size: 12pt;
     color: #ED024B;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: -0.5rem;
     font-family: ${Font.TERTIARY};
+    @media (min-width: 480px) {
+      font-size: 13pt;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 14pt;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 15pt;
+    }
     `;
 
 const Dj = styled.div`
     color: white;
-    font-size: 15pt;
+    font-size: 12pt;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: ${Font.TERTIARY};
+    @media (min-width: 480px) {
+      font-size: 13pt;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 14pt;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 15pt;
+    }
+
     `;
 
 const Reference = styled.div`

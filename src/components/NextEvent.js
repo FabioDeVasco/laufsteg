@@ -8,18 +8,34 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 800px;
+	height: 900px;
+	
+	@media (min-width: 480px) {
+		height: 800px;
+	}
 `;
 
 const EventBody = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-	margin-top: 3rem;
+	margin-top: 1rem;
 	z-index: 2;
-	@media (max-width: 700px) {
-    flex-direction: column;
-  }
+
+
+	@media (min-width: 480px) {
+		margin-top: 2rem;
+	}
+
+	@media (min-width: 768px) {
+		margin-top: 3rem;
+		flex-direction: row;
+	}
+
+	@media (min-width: 992px) {
+		margin-top: 3rem;
+	}
+
   `;
 
 const EventText = styled.div`
@@ -27,38 +43,65 @@ const EventText = styled.div`
   flex-direction: column;
   flex:1.5;
   letter-spacing: 2px;
-  font-size: 14pt;
+  font-size: 9pt;
   text-align: justify;
-  margin-right: 6rem;
-	margin-left: 8rem;
+  margin-right: 1.5rem;
+	margin-left: 1.5rem;
   margin-top: 2rem;
-  line-height: 1.8rem;
+  line-height: 1rem;
+	white-space: normal;
 
-	@media (max-width: 900px) {
-    margin-right: 3rem;}
-	@media (max-width: 1120px) {
-    font-size: 12pt;
-		margin-left: 3rem;}
-	@media (max-width: 700px) {
-	  font-size: 12pt;
-		margin-left: 2rem;}
-  @media (max-width: 520px) {
-    font-size: 11pt;
-    letter-spacing: 1px;
-	  margin-left: 1rem;}
-  @media (max-width: 370px) {
-    font-size: 10pt;
-    letter-spacing: 0px;}
-  @media (max-width: 300px) {
-    font-size: 9pt;
+
+	@media (min-width: 480px) {
+		font-size: 10pt;
+		text-align: center;
+		margin-right: 2rem;
+		margin-left: 2rem;
+		line-height: 1.2rem;
+
 	}
+
+	@media (min-width: 768px) {
+		font-size: 10pt;
+		text-align: justify;
+		line-height: 1.5rem;
+		margin-right: 4rem;
+		margin-left: 4rem;
+		line-height: 1.3rem;
+	}
+
+	@media (min-width: 890px) {
+		font-size: 10pt;
+		text-align: justify;
+		margin-right: 4rem;
+		margin-left: 4rem;
+		line-height: 1.5rem;
+	}
+
+	@media (min-width: 995px) {
+		font-size: 12pt;
+		text-align: justify;
+		margin-right: 6rem;
+		margin-left: 6rem;
+		line-height: 1.8rem;
+	}
+
   `;
 
 const IconContainer = styled.div`
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-top: 2rem;
+		margin-top: 0.1rem;
+
+		@media (min-width: 768px) {
+			margin-top: 1rem;
+		}
+
+		@media (min-width: 1030px) {
+			margin-top: 2rem;
+		}
+
 	`;
 
 	const GreyBackground = styled.div`
@@ -66,20 +109,24 @@ const IconContainer = styled.div`
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		background-color: #606060;
+		background-color: white;
 		z-index: 1;
-		height: 41%;
+		height: 12%;
 
 		@media (min-width: 480px) {
-			height: 31%;
+			height: 7%;
+			background-color: #606060;
+			margin-top: 2rem;
 		}
 
 		@media (min-width: 768px) {
-			height: 32%;
+			height: 21%;
+			background-color: #606060;
 		}
 
 		@media (min-width: 992px) {
-			height: 20%;
+			height: 15%;
+			background-color: #606060;
 		}
 
 	`;

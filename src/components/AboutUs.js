@@ -13,8 +13,20 @@ const AboutBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 1rem;
 	z-index: 2;
+
+	@media (min-width: 480px) {
+		margin-top: 2rem;
+	}
+
+	@media (min-width: 768px) {
+		margin-top: 3rem;
+	}
+
+	@media (min-width: 992px) {
+		margin-top: 3rem;
+	}
 `;
 
 const AboutPicture = styled.div`

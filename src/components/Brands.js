@@ -37,7 +37,7 @@ const WhiteBackground = styled.div`
 		height: 31%;
 	}
 	@media (min-width: 992px) {
-		height: 42%;
+		height: 46%;
 	}
 
 `;
