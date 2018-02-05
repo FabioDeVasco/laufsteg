@@ -12,8 +12,6 @@ align-items: center;
 justify-content: center;
 border: solid 3px;
 border-color: ${props => (props.colorNormal ? props.colorNormal : 'white')};
-margin-right: 1rem;
-margin-bottom: 1rem;
 cursor: pointer;
 
 &:hover {

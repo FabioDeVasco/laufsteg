@@ -8,7 +8,7 @@ const Wrapper = styled.a`
 	position: relative;
   flex-direction: column;
   color: white;
-  font-size: 12pt;
+  font-size: 2pt;
   background-color: grey;
 	align-items: center;
 	text-align: center;
@@ -17,7 +17,7 @@ const Wrapper = styled.a`
   border-color: ${props => (props.colorNormal ? props.colorNormal : 'white')};
 	margin-right: 1rem;
 	flex-basis: 50%;
-	font-size: .9rem;
+	font-size: .7rem;
 	letter-spacing: 1px;
 	font-weight: bold;
 	font-family: ${Font.SECONDARY};
@@ -31,6 +31,22 @@ const Wrapper = styled.a`
 
       }
     }
+
+
+    @media (min-width: 768px) {
+  		font-size: .7rem;
+
+  	}
+
+  	@media (min-width: 890px) {
+  		font-size: .8rem;
+
+  	}
+
+  	@media (min-width: 995px) {
+  		font-size: .9rem;
+
+  	}
 
   }
 `;

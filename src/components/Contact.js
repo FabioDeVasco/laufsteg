@@ -13,15 +13,38 @@ const Wrapper = styled.div`
 	flex-direction: column;
   background-color: #606060;
 	height: 800px;
-	${''/* padding-top: 4rem; */}
   `;
 
 const ContactBody = styled.div`
   display: flex;
-  flex-direction: row;
-  margin-top: 7rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  flex-direction: column-reverse;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+
+		@media (min-width: 480px) {
+			margin-top: 3rem;
+			margin-left: 6rem;
+		  margin-right: 6rem;
+			flex-direction: column-reverse;
+		}
+
+		@media (min-width: 768px) {
+			margin-top: 4rem;
+			margin-left: 4rem;
+		  margin-right: 4rem;
+			height: 400px;
+			flex-direction: row;
+		}
+
+		@media (min-width: 992px) {
+			margin-top: 5rem;
+			margin-left: 6rem;
+		  margin-right: 6rem;
+			height: 400px;
+			flex-direction: row;
+		}
 `;
 
 const ContactDetails = styled.div`
@@ -31,23 +54,62 @@ const ContactDetails = styled.div`
 
 `;
 
-const ContactTile = styled.div`
+const ContactTileUp = styled.div`
   display: flex;
   flex-direction: row;
 	flex-basis: 50%;
+	margin-bottom: 0.5rem;
+	margin-top: 1rem;
+	height: 100px;
 
+	@media (min-width: 480px) {
+		margin-top: 1rem;
+		height: 300px;
+	}
+
+	@media (min-width: 768px) {
+		margin-top: 0rem;
+	}
+
+	@media (min-width: 992px) {
+		margin-top: 0rem;
+	}
+`;
+
+
+const ContactTileDown = styled.div`
+  display: flex;
+  flex-direction: row;
+	flex-basis: 50%;
+	margin-top: 0.5rem;
+	height: 100px;
+	margin-bottom: 1rem;
+
+	@media (min-width: 480px) {
+		height: 300px;
+		margin-bottom: 1rem;
+	}
+
+	@media (min-width: 768px) {
+		margin-bottom: 0rem;
+	}
+
+	@media (min-width: 992px) {
+		margin-bottom: 0rem;
+	}
 `;
 
 const ContactForm = styled.form`
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	width: 550px;
+	width: 100%;
 	padding: 2rem;
 	border: 3px solid white;
 	z-index: 1;
 	background-color: black;
 	text-align: left;
+	margin-left: 0rem;
 
 	&::before {
 		content: "";
@@ -62,6 +124,22 @@ const ContactForm = styled.form`
 		filter: blur(0.8px);
 		opacity: 0.75;
 	}
+
+
+			@media (min-width: 480px) {
+				width: 100%;
+				margin-left: 0rem;
+			}
+
+			@media (min-width: 768px) {
+				width: 50%;
+				margin-left: 1rem;
+			}
+
+			@media (min-width: 992px) {
+				width: 50%;
+				margin-left: 1rem;
+			}
 `;
 
 const InfoAdress = styled.div`
@@ -89,7 +167,7 @@ const InfoAdress = styled.div`
 
 const Address = styled.div`
 	background-color: gray;
-	height: 50px;
+	height: 30px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -97,10 +175,25 @@ const Address = styled.div`
 	justify-content: center;
 	align-items: center;
 	line-height: 1.2;
-	font-size: .9rem;
+	font-size: .7rem;
 	letter-spacing: 1px;
 	font-weight: bold;
 	font-family: ${Font.SECONDARY};
+
+	@media (min-width: 480px) {
+		font-size: .7rem;
+		height: 30px;
+	}
+
+	@media (min-width: 768px) {
+		font-size: .8rem;
+		height: 40px;
+	}
+
+	@media (min-width: 992px) {
+		font-size: .9rem;
+		height: 50px;
+	}
 `;
 
 
@@ -144,37 +237,37 @@ class Contact extends Component {
         <SectionTitle title="Kontakt" />
         <ContactBody>
           <ContactDetails>
-            <ContactTile>
-              <SocialMedia
+            <ContactTileUp>
+							<InfoAdress>
+								<Location />
+								<Address>
+									Biedermanngasse 4<br />
+									74072 Heilbronn
+								</Address>
+							</InfoAdress>
+							<SocialMedia
                 image={require('../assets/images/Instagrampic.png')}
                 className="fa fa-instagram fa-3x"
                 colorNormal="#F5F5F5"
                 colorActive="#cd486b"
                 href="https://www.instagram.com/laufsteg.heilbronn/"
               />
-              <SocialMedia
+            </ContactTileUp>
+            <ContactTileDown>
+							<InfoCall
+								className="fa fa-phone fa-3x"
+								colorNormal="#F5F5F5"
+								colorActive="#A99D73"
+								href="tel:+4971312031881"
+							/>
+							<SocialMedia
                 image={require('../assets/images/Facebookpic.png')}
                 className="fa fa-facebook-square fa-3x"
                 colorNormal="#F5F5F5"
                 colorActive="#3b5998"
                 href="https://de-de.facebook.com/Laufsteg-Heilbronn-361537650674287/"
               />
-            </ContactTile>
-            <ContactTile>
-              <InfoCall
-                className="fa fa-phone fa-3x"
-                colorNormal="#F5F5F5"
-                colorActive="#A99D73"
-                href="tel:+4971312031881"
-              />
-              <InfoAdress>
-                <Location />
-                <Address>
-                  Biedermanngasse 4<br />
-                  74072 Heilbronn
-                </Address>
-              </InfoAdress>
-            </ContactTile>
+            </ContactTileDown>
           </ContactDetails>
           <ContactForm>
             <div className="field">
@@ -217,7 +310,7 @@ class Contact extends Component {
             </div>
           </ContactForm>
         </ContactBody>
-				<WhiteBackground />
+				{/* <WhiteBackground /> */}
       </Wrapper>
     );
   }
