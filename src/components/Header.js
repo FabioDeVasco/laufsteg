@@ -77,7 +77,7 @@ class Header extends Component {
 						<AccentTitle title= "Willkommen" />
 	          </WallpaperContainer>
 	        </Welcome>
-					<WhiteBackground/>
+					{/* <WhiteBackground/> */}
 	      </Wrapper>
 
     );

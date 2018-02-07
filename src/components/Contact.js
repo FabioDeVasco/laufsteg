@@ -146,18 +146,11 @@ const InfoAdress = styled.div`
   display: flex;
 	position: relative;
   flex-direction: column;
-  color: white;
-  font-size: 12pt;
-  background-color: grey;
   text-align: center;
   border: solid 3px;
-  border-color: withe;
+  border-color: white;
 	margin-right: 1rem;
 	flex-basis: 50%;
-	line-height: 1.2;
-	font-size: .9rem;
-	letter-spacing: 1px;
-	font-weight: bold;
 
 	&:hover {
     border-color: #908C8C;
@@ -165,9 +158,10 @@ const InfoAdress = styled.div`
 	}
 `;
 
-const Address = styled.div`
+const Address = styled.a`
 	background-color: gray;
-	height: 30px;
+	color: white;
+	height: 100%;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -182,17 +176,17 @@ const Address = styled.div`
 
 	@media (min-width: 480px) {
 		font-size: .7rem;
-		height: 30px;
+		height: 27%;
 	}
 
 	@media (min-width: 768px) {
 		font-size: .8rem;
-		height: 40px;
+		height: 27%;
 	}
 
 	@media (min-width: 992px) {
 		font-size: .9rem;
-		height: 50px;
+		height: 25%;
 	}
 `;
 
@@ -201,10 +195,25 @@ const Label = styled.label.attrs({ className: 'label' })`
 	color: white;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	word-spacing: 3px;
-	font-size: .8rem;
+	word-spacing: 1px;
+	font-size: .7rem;
 	letter-spacing: 1px;
 	color: #F5F5F5;
+
+	@media (min-width: 480px) {
+		font-size: .7rem;
+		word-spacing: 1px;
+	}
+
+	@media (min-width: 768px) {
+		font-size: .8rem;
+		word-spacing: 2px;
+	}
+
+	@media (min-width: 992px) {
+		font-size: .9rem;
+		word-spacing: 3px;
+	}
 `;
 
 const WhiteBackground = styled.div`
@@ -240,7 +249,7 @@ class Contact extends Component {
             <ContactTileUp>
 							<InfoAdress>
 								<Location />
-								<Address>
+								<Address href="http://maps.google.com/?q=Biedermanngasse4,74072Heilbronn">
 									Biedermanngasse 4<br />
 									74072 Heilbronn
 								</Address>
