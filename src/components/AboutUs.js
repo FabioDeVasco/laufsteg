@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 
 const AboutBody = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-top: 1rem;
 	z-index: 2;
@@ -22,6 +22,7 @@ const AboutBody = styled.div`
 
 	@media (min-width: 768px) {
 		margin-top: 3rem;
+		flex-direction: row;
 	}
 
 	@media (min-width: 992px) {
@@ -45,12 +46,27 @@ const AboutText = styled.div`
   flex-direction: column;
   flex:1.5;
   letter-spacing: 2px;
-  font-size: 14pt;
+  font-size: 9pt;
   text-align: justify;
   margin-right: 6rem;
 	margin-left: 6rem;
   margin-top: 2rem;
   line-height: 1.8rem;
+
+	@media (min-width: 480px) {
+		font-size: 10pt;
+
+	}
+
+	@media (min-width: 768px) {
+		font-size: 10pt;
+
+	}
+
+	@media (min-width: 995px) {
+		font-size: 12pt;
+
+	}
 `;
 
 const GreyBackground = styled.div`
@@ -58,20 +74,23 @@ const GreyBackground = styled.div`
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: #606060;
+	background-color: white;
 	z-index: 1;
 	height: 41%;
 
 	@media (min-width: 480px) {
 		height: 31%;
+		background-color: white;
 	}
 
 	@media (min-width: 768px) {
-		height: 32%;
+		height: 39%;
+		background-color: #606060;
 	}
 
 	@media (min-width: 992px) {
-		height: 40%;
+		height: 45%;
+		background-color: #606060;
 	}
 
 `;

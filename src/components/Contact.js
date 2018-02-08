@@ -319,7 +319,7 @@ class Contact extends Component {
             </div>
           </ContactForm>
         </ContactBody>
-				{/* <WhiteBackground /> */}
+				<WhiteBackground />
       </Wrapper>
     );
   }
