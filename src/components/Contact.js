@@ -11,22 +11,36 @@ import InfoCall from './contactComponents/InfoCall';
 const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-  background-color: #606060;
+  background-color: white;
 	height: 800px;
+
+	@media (min-width: 480px) {
+		background-color: #606060;
+		height: 1000px;
+		}
+
+	@media (min-width: 768px) {
+		height: 800px;
+		}
+
+	@media (min-width: 992px) {
+		height: 800px;
+		}
+	}
   `;
 
 const ContactBody = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 
 
 		@media (min-width: 480px) {
-			margin-top: 3rem;
-			margin-left: 6rem;
-		  margin-right: 6rem;
+			margin-top: 6rem;
+			margin-left: 2rem;
+		  margin-right: 2rem;
 			flex-direction: column-reverse;
 		}
 
@@ -51,6 +65,19 @@ const ContactDetails = styled.div`
   display: flex;
   flex-direction: column;
 	flex-basis: 50%;
+	height: 20rem;
+
+	@media (min-width: 480px) {
+		height: 70rem;
+	}
+
+	@media (min-width: 768px) {
+		height: 100%;
+	}
+
+	@media (min-width: 992px) {
+		height:100%;
+	}
 
 `;
 
@@ -110,6 +137,7 @@ const ContactForm = styled.form`
 	background-color: black;
 	text-align: left;
 	margin-left: 0rem;
+	height: 23rem;
 
 	&::before {
 		content: "";
@@ -129,16 +157,19 @@ const ContactForm = styled.form`
 			@media (min-width: 480px) {
 				width: 100%;
 				margin-left: 0rem;
+				height: 60rem;
 			}
 
 			@media (min-width: 768px) {
 				width: 50%;
 				margin-left: 1rem;
+				height: 23.15rem;
 			}
 
 			@media (min-width: 992px) {
 				width: 50%;
 				margin-left: 1rem;
+				height: 25rem;
 			}
 `;
 
@@ -176,7 +207,7 @@ const Address = styled.a`
 
 	@media (min-width: 480px) {
 		font-size: .7rem;
-		height: 27%;
+		height: 35%;
 	}
 
 	@media (min-width: 768px) {
@@ -215,6 +246,75 @@ const Label = styled.label.attrs({ className: 'label' })`
 		word-spacing: 3px;
 	}
 `;
+const Input = styled.input`
+	font-size: .6rem;
+	word-spacing: 1px;
+	white-space: pre;
+	padding-left: 2.25em;
+
+@media (min-width: 480px) {
+	font-size: .7rem;
+	word-spacing: 1px;
+		white-space: pre;
+}
+
+@media (min-width: 768px) {
+	font-size: .8rem;
+	word-spacing: 2px;
+		white-space: pre;
+}
+
+@media (min-width: 992px) {
+	font-size: 1rem;
+	word-spacing: 3px;
+		white-space: nowrap;
+}
+
+`;
+
+const Textarea = styled.textarea`
+	font-size: .6rem;
+	word-spacing: 1px;
+	padding-left: 2.25em;
+
+@media (min-width: 480px) {
+	font-size: .7rem;
+	word-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+	font-size: .8rem;
+	word-spacing: 2px;
+}
+
+@media (min-width: 992px) {
+	font-size: 1rem;
+	word-spacing: 3px;
+}
+
+`;
+
+const EmailEnter = styled.div`
+	display: flex;
+	flex-direction: column;
+	`;
+
+	const Button = styled.button`
+		font-size: .6rem;
+
+	@media (min-width: 480px) {
+		font-size: .7rem;
+	}
+
+	@media (min-width: 768px) {
+		font-size: .8rem;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 1rem;
+	}
+
+	`;
 
 const WhiteBackground = styled.div`
 	position: relative;
@@ -223,7 +323,7 @@ const WhiteBackground = styled.div`
 	width: 100%;
 	background-color: white;
 	z-index: -1;
-	height: 41%;
+	height: 1%;
 
 	@media (min-width: 480px) {
 		height: 31%;
@@ -282,7 +382,7 @@ class Contact extends Component {
             <div className="field">
               <Label>Ihr Name</Label>
               <div className="control">
-                <input
+                <Input
                   className="input"
                   type="text"
                   placeholder="Geben Sie Ihren Namen ein"
@@ -292,22 +392,22 @@ class Contact extends Component {
 
             <div className="field">
               <Label>Ihre Emailadresse</Label>
-              <div className="control has-icons-left has-icons-right">
-                <input
+              <EmailEnter className="control has-icons-left has-icons-right">
+                <Input
                   className="input"
                   type="email"
                   placeholder="Geben Sie Ihre Emailadresse ein"
                 />
-                <span className="icon is-small is-left">
+                {/* <span className="icon is-small is-left">
                   <i className="fa fa-envelope" />
-                </span>
-              </div>
+                </span> */}
+              </EmailEnter>
             </div>
 
             <div className="field">
               <Label>Ihre Nachricht</Label>
               <div className="control">
-                <textarea
+                <Textarea
                   className="textarea"
                   placeholder="Womit können wir Ihnen helfen?"
                 />
@@ -315,7 +415,7 @@ class Contact extends Component {
             </div>
 
             <div style={{ alignSelf: 'center' }} className="control">
-              <button className="button is-link">Absenden</button>
+              <Button className="button is-link">Absenden</Button>
             </div>
           </ContactForm>
         </ContactBody>

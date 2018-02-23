@@ -18,9 +18,10 @@ const Wrapper = styled.a`
 	margin-right: 1rem;
 	flex-basis: 50%;
 	font-size: .7rem;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	font-weight: bold;
 	font-family: ${Font.SECONDARY};
+  
 
     &:hover {
       border-color: ${props => props.colorActive};
@@ -32,14 +33,19 @@ const Wrapper = styled.a`
       }
     }
 
+    @media (min-width: 480px) {
+    font-size: .7em;
+
+    }
+
 
     @media (min-width: 768px) {
-  		font-size: .7rem;
+  		font-size: .8rem;
 
   	}
 
   	@media (min-width: 890px) {
-  		font-size: .8rem;
+  		font-size: .9rem;
 
   	}
 

@@ -13,6 +13,7 @@ justify-content: center;
 border: solid 3px;
 border-color: ${props => (props.colorNormal ? props.colorNormal : 'white')};
 cursor: pointer;
+font-size: 0.5em;
 
 &:hover {
   border-color: ${props => props.colorActive};
@@ -34,6 +35,11 @@ cursor: pointer;
 	background-image: url(${props => props.image});
 	filter: blur(0.3px);
 	opacity: 0.75;
+}
+
+@media (min-width: 480px) {
+font-size: 1em;
+
 }
 
 `;
