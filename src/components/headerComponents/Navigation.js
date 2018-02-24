@@ -9,25 +9,61 @@ const Navi = styled.div`
 	justify-content: center;
 	flex-direction: column;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 0.5px;
 	flex: 1;
 	align-items: center;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: #606060;
+
+	@media (min-width: 480px) {
+		letter-spacing: 0.5px;
+		flex-direction: row;
+	}
+
+	@media (min-width: 768px) {
+		letter-spacing: 1px;
+		flex-direction: row;
+	}
+
+	@media (min-width: 992px) {
+		flex-direction: column;
+		letter-spacing: 2px;
+	}
+
 `;
 
-const Opening = styled.div`
-	font-size: 8pt;
-	color: white;
-	margin-top: 1.5rem;
-	font-family: ${Font.SECONDARY};
-`;
+// const Opening = styled.div`
+// 	font-size: 8pt;
+// 	color: white;
+// 	margin-top: 1.5rem;
+// 	font-family: ${Font.SECONDARY};
+// `;
 
 const Links = styled.div`
 	display: flex;
-	flex-direction: column;
-	margin-top: 3rem;
-	margin-bottom: 2rem;
+	flex-direction: row;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+
+	@media (min-width: 480px) {
+		margin-left: 0.62rem;
+		margin-right: 0.62rem;
+	}
+
+	@media (min-width: 768px) {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	@media (min-width: 992px) {
+		flex-direction: column;
+		margin-top: 7rem;
+		margin-bottom: 2rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
+
+	}
 `;
 
 const SuperLink = styled(Link)`
@@ -35,6 +71,23 @@ const SuperLink = styled(Link)`
 	color: white;
 	margin-bottom: 2rem;
 	margin-top: 1em;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+
+	@media (min-width: 480px) {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+	@media (min-width: 768px) {
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+	}
+
+	@media (min-width: 992px) {
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
 `;
 
 const Event = styled.div`
@@ -42,7 +95,11 @@ const Event = styled.div`
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 6rem;
+	margin: 0rem;
+
+	@media (min-width: 480px) {
+		margin: 1rem;
+}
 `;
 
 const EventName = styled(Link)`
@@ -53,14 +110,17 @@ const EventName = styled(Link)`
 
 const EventDate = styled.div`
 	font-size: 9pt;
-	color: white;
+	color: #606060;
 	font-family: ${Font.SECONDARY};
+	@media (min-width: 480px) {
+		color: white;
+	}
 `;
 
 const Navigation = ({ eventDate }) => {
   return (
     <Navi>
-      <Opening>
+      {/* <Opening>
         <div>Öffnungszeiten</div>
         {' '}
 
@@ -72,7 +132,7 @@ const Navigation = ({ eventDate }) => {
         <div>Sa.</div>
         {' '}
         <div>10.00-17.00 Uhr</div>
-      </Opening>
+      </Opening> */}
       <Event>
         <EventName
           to="next-event"
