@@ -101,31 +101,31 @@ const WallpaperContainer = styled.div`
 	}
 `;
 
-const WhiteBackground = styled.div`
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: white;
-	z-index: -1;
-	height: 40%;
-
-	@media (min-width: 480px) {
-		height: 38%;
-	}
-
-	@media (min-width: 768px) {
-		height: 40%;
-	}
-
-	@media (min-width: 968px) {
-		height: 31%;
-	}
-	@media (min-width: 992px) {
-		height: 12%;
-	}
-
-`;
+// const WhiteBackground = styled.div`
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	background-color: white;
+// 	z-index: -1;
+// 	height: 40%;
+//
+// 	@media (min-width: 480px) {
+// 		height: 38%;
+// 	}
+//
+// 	@media (min-width: 768px) {
+// 		height: 40%;
+// 	}
+//
+// 	@media (min-width: 968px) {
+// 		height: 31%;
+// 	}
+// 	@media (min-width: 992px) {
+// 		height: 12%;
+// 	}
+//
+// `;
 
 class Header extends Component {
   render() {

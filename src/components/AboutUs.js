@@ -6,7 +6,10 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  height: 800px;
+  height: 500px;
+	@media (min-width: 480px) {
+		height: 800px;
+	}
 `;
 
 const AboutBody = styled.div`
@@ -31,42 +34,99 @@ const AboutBody = styled.div`
 `;
 
 const AboutPicture = styled.div`
+	display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 300px;
   flex:1.5;
-  background-image: url(${require('../assets/images/Aboutpic.jpg')});
-  background-position: right;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding-top: 18rem;
-  margin-right: 6rem;
+  z-index: 1;
+  border: 3px solid white;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-top: 2rem;
+
+
+  @media (min-width: 480px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 500px;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 4rem;
+    height: 500px;
+    width: 320px;
+  }
+
+  @media (min-width: 992px) {
+    margin-right: 6rem;
+    height: 500px;
+    width: 700px;
+  }
+
+  &::before {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	z-index: -1;
+  	background-size: cover;
+  	background-image: url(${require('../assets/images/Aboutpic.jpg')});
+    background-position: center;
+  }
 `;
 
 const AboutText = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex:1.5;
-  letter-spacing: 2px;
-  font-size: 9pt;
-  text-align: justify;
-  margin-right: 6rem;
+display: flex;
+flex-direction: column;
+flex:1.5;
+letter-spacing: 2px;
+font-size: 9pt;
+text-align: justify;
+margin-right: 1.5rem;
+margin-left: 1.5rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+line-height: 1rem;
+white-space: normal;
+
+
+@media (min-width: 480px) {
+	font-size: 10pt;
+	text-align: center;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	line-height: 1.2rem;
+	margin-bottom: 2rem;
+
+}
+
+@media (min-width: 768px) {
+	font-size: 10pt;
+	text-align: justify;
+	line-height: 1.5rem;
+	margin-right: 4rem;
+	margin-left: 4rem;
+	line-height: 1.3rem;
+}
+
+@media (min-width: 890px) {
+	font-size: 10pt;
+	text-align: justify;
+	margin-right: 4rem;
+	margin-left: 4rem;
+	line-height: 1.5rem;
+}
+
+@media (min-width: 995px) {
+	font-size: 12pt;
+	text-align: justify;
+	margin-right: 6rem;
 	margin-left: 6rem;
-  margin-top: 2rem;
-  line-height: 1.8rem;
-
-	@media (min-width: 480px) {
-		font-size: 10pt;
-
-	}
-
-	@media (min-width: 768px) {
-		font-size: 10pt;
-
-	}
-
-	@media (min-width: 995px) {
-		font-size: 12pt;
-
-	}
+	line-height: 1.8rem;
+}
 `;
 
 const GreyBackground = styled.div`
@@ -76,10 +136,10 @@ const GreyBackground = styled.div`
 	width: 100%;
 	background-color: white;
 	z-index: 1;
-	height: 41%;
+	height: 1%;
 
 	@media (min-width: 480px) {
-		height: 31%;
+		height: 18%;
 		background-color: white;
 	}
 

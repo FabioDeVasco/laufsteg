@@ -33,13 +33,6 @@ const Navi = styled.div`
 
 `;
 
-// const Opening = styled.div`
-// 	font-size: 8pt;
-// 	color: white;
-// 	margin-top: 1.5rem;
-// 	font-family: ${Font.SECONDARY};
-// `;
-
 const Links = styled.div`
 	display: flex;
 	flex-direction: row;
@@ -117,22 +110,40 @@ const EventDate = styled.div`
 	}
 `;
 
+
+const WhiteBackground = styled.div`
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color: #606060;
+	z-index: -1;
+	height: 1%;
+
+	@media (min-width: 480px) {
+		background-color: #606060;
+	}
+
+	@media (min-width: 768px) {
+	background-color: #606060;
+	}
+
+	@media (min-width: 968px) {
+	background-color: #606060;
+	height: 0%;
+	bottom: 0rem;
+	}
+
+	@media (min-width: 992px) {
+		bottom: -9rem;
+		height: 35%;
+		background-color: white;
+	}
+
+`;
+
 const Navigation = ({ eventDate }) => {
   return (
     <Navi>
-      {/* <Opening>
-        <div>Öffnungszeiten</div>
-        {' '}
-
-        <div>Mo.-Fr.</div>
-        {' '}
-        <div>10.00-18.00 Uhr</div>
-        {' '}
-
-        <div>Sa.</div>
-        {' '}
-        <div>10.00-17.00 Uhr</div>
-      </Opening> */}
       <Event>
         <EventName
           to="next-event"
@@ -176,6 +187,7 @@ const Navigation = ({ eventDate }) => {
           Unsere Marken
         </SuperLink>
       </Links>
+			<WhiteBackground/>
     </Navi>
   );
 };
