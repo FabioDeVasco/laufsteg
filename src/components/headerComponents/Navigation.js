@@ -6,7 +6,6 @@ import { Link } from 'react-scroll';
 
 const Navi = styled.div`
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -51,8 +50,8 @@ const Links = styled.div`
 
 	@media (min-width: 992px) {
 		flex-direction: column;
-		margin-top: 7rem;
-		margin-bottom: 2rem;
+		margin-top: 5rem;
+		margin-bottom: 3rem;
 		margin-left: 0rem;
 		margin-right: 0rem;
 

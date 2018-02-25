@@ -20,11 +20,11 @@ const Wrapper = styled.div`
 		}
 
 	@media (min-width: 768px) {
-		height: 800px;
+		height: 700px;
 		}
 
 	@media (min-width: 992px) {
-		height: 800px;
+		height: 700px;
 		}
 	}
   `;
@@ -45,7 +45,7 @@ const ContactBody = styled.div`
 		}
 
 		@media (min-width: 768px) {
-			margin-top: 4rem;
+			margin-top: 6rem;
 			margin-left: 4rem;
 		  margin-right: 4rem;
 			height: 400px;
@@ -66,17 +66,18 @@ const ContactDetails = styled.div`
   flex-direction: column;
 	flex-basis: 50%;
 	height: 20rem;
+	z-index: 1;
 
 	@media (min-width: 480px) {
 		height: 70rem;
 	}
 
 	@media (min-width: 768px) {
-		height: 100%;
+		height: 23.15rem;
 	}
 
 	@media (min-width: 992px) {
-		height:100%;
+		height: 25rem;
 	}
 
 `;
@@ -322,19 +323,19 @@ const WhiteBackground = styled.div`
 	left: 0;
 	width: 100%;
 	background-color: white;
-	z-index: -1;
+	z-index: 0;
 	height: 1%;
 
 	@media (min-width: 480px) {
-		height: 31%;
+		height: 10%;
 	}
 
 	@media (min-width: 768px) {
-		height: 32%;
+		height: 46%;
 	}
 
 	@media (min-width: 992px) {
-		height: 15%;
+		height: 35%;
 	}
 
 `;
