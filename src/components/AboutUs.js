@@ -125,7 +125,7 @@ white-space: normal;
 	text-align: justify;
 	margin-right: 6rem;
 	margin-left: 6rem;
-	line-height: 1.8rem;
+	line-height: 1.6rem;
 }
 `;
 
@@ -163,12 +163,12 @@ class AboutUs extends Component {
         <AboutBody>
           <AboutText>
             <div>
-              Wir sind eine private Boutique die Ihre Produkte sorgfälltig auswählt um stehts unseren Kundenwünschen gerecht zu werden.
+              Wir sind eine private Boutique, die ihre Produkte sorgfältig auswählt, um stets unseren Kundenwünschen gerecht zu werden.
             </div>
             {' '}
             <br />
             <div>
-              Bei uns finden Sie das Besondere aus Damenbekleidung, Taschen und Accessoires. Wir freuen uns über Ihren besuch.
+              Bei uns finden Sie das Besondere aus Damenbekleidung, Taschen und Accessoires. Wir freuen uns auf Ihren Besuch.
             </div>
           </AboutText>
           <AboutPicture />

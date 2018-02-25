@@ -83,7 +83,7 @@ const EventText = styled.div`
 		text-align: justify;
 		margin-right: 6rem;
 		margin-left: 6rem;
-		line-height: 1.8rem;
+		line-height: 1.6rem;
 	}
 
   `;
@@ -141,17 +141,17 @@ class NextEvent extends Component {
           <Flyer eventDate="07.10.16" dayName="Freitag" time="18:00 /22:00 Uhr" dj="Jordi /Mata" reference="Creme 21 - Südklang"/>
           <EventText>
             <div>
-              Zwei mal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips um euch die neue Kollektionen vorzustellen.
+              Zweimal im Jahr veranstalten wir aus dem Laufsteg eine kleine Feier mit Drinks und Dips, um euch die neuen Kollektionen vorzustellen.
             </div>
             {' '}
             <br />
             <div>
-              Wir möchten euch ganz herzlich einladen um an unserem nächsten Event teilzunehmen. Wir freuen uns auf euer Erscheinen und auf einen tollen Abend mit ganz viel Spaß.
+              Wir möchten Sie herzlich einladen an unserem nächsten Event teilzunehmen und freuen uns auf Ihr Erscheinen sowie auf einen gelungenen, modereichen Abend.
             </div>
             {' '}
             <br />
             <div>
-              Auf unseren sozialen Netzwerken könnt ihr Fotos von unseren Events und vieles mehr finden. Schaut einfach vorbei!
+              Auf unseren sozialen Netzwerken können Sie Fotos von unseren aktuellen Kollektionen, Events und vieles mehr finden. Schauen Sie gerne vorbei!
             </div>
             <IconContainer>
               <Icon className="fa fa-facebook-square fa-2x" colorNormal="#606060" colorActive="#3b5998" href="https://de-de.facebook.com/Laufsteg-Heilbronn-361537650674287/"/>
