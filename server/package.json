@@ -18,7 +18,9 @@
     "compression": "^1.7.1",
     "connect-history-api-fallback": "^1.5.0",
     "express": "^4.16.2",
+    "optipng": "^1.1.0",
     "pm2": "^2.9.3",
+    "pngquant": "^1.3.0",
     "postmark": "^1.5.0",
     "ramda": "^0.25.0"
   },
