@@ -1,0 +1,33 @@
+<!--
+| Environment-based index.html template
+|
+| It uses ejs and HtmlWebpackPlugin to generate a different index.html
+| for each environment. HtmlWebpackPlugin will dynamically add references
+| to the scripts and styles that it bundles to this file.
+|
+-->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>Laufsteg</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Opengraph -->
+  <% if (htmlWebpackPlugin.options.NODE_ENV !== 'development' && htmlWebpackPlugin.options.FACEBOOK_APP_ID) { %>
+    <meta property="fb:app_id" content="<%= htmlWebpackPlugin.options.FACEBOOK_APP_ID %>" />
+    <% } %>
+      <meta property="og:type" content="restaurant" />
+      <meta property="og:title" content="Laufsteg Heilbronn" />
+      <meta property="og:url" content="https://laufsteg-heilbronn.de/" />
+      <meta property="og:image" content="https://laufsteg-heilbronn.de/logo.png" />
+      <meta property="og:description" content="Kleidung mit Stil" />
+      <!-- End Opengraph Code -->
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
