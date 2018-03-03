@@ -9,7 +9,7 @@ import {
 
 const Location = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBYg07orlfcDlnBEMWb0BgEHZB7yoqYsRQ&v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAJWovhIO3whVLEzJAURh8AdRHD_eOLguk&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `75%` }} />,
     mapElement: <div style={{ height: `100%` }} />,
